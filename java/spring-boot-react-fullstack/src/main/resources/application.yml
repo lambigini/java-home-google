@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://localhost:5432/amigoscodedemo
+    username: postgres
+    password: password
+    pool-size: 30
