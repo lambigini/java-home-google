@@ -1,0 +1,8 @@
+/target
+/.idea
+**/*.iml
+.DS_Store
+/tmp*.txt
+/selenium_standalone
+/selenium_standalone_zips
+/phantomjsdriver.log

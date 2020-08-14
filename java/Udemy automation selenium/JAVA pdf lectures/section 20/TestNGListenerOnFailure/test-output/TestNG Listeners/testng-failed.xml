@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Listeners]" parallel="none">
+  <listeners>
+    <listener class-name="TestListener"/>
+  </listeners>
+  <test name="Login Test(failed)" parallel="none">
+    <classes>
+      <class name="LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="composeEmail"/>
+          <include name="setUp"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- LoginTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+</suite> <!-- Failed suite [TestNG Listeners] -->

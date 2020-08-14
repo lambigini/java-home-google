@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression Suite" duration-ms="96" started-at="2019-02-22T11:04:10Z" finished-at="2019-02-22T11:04:10Z">
+    <groups>
+    </groups>
+    <test name="TestParametersFromXML Test" duration-ms="47" started-at="2019-02-22T11:04:10Z" finished-at="2019-02-22T11:04:10Z">
+      <class name="parameterization.TestParametersFromXML">
+        <test-method status="PASS" signature="getBrowser(java.lang.String, java.lang.String)[pri:0, instance:parameterization.TestParametersFromXML@675d3402]" name="getBrowser" duration-ms="16" started-at="2019-02-22T11:04:10Z" finished-at="2019-02-22T11:04:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+      </class> <!-- parameterization.TestParametersFromXML -->
+    </test> <!-- TestParametersFromXML Test -->
+    <test name="TestParametersFromXML2 Test" duration-ms="4" started-at="2019-02-22T11:04:10Z" finished-at="2019-02-22T11:04:10Z">
+      <class name="parameterization.TestParametersFromXML">
+        <test-method status="PASS" signature="getBrowser(java.lang.String, java.lang.String)[pri:0, instance:parameterization.TestParametersFromXML@27efef64]" name="getBrowser" duration-ms="2" started-at="2019-02-22T11:04:10Z" finished-at="2019-02-22T11:04:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[uat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBrowser -->
+      </class> <!-- parameterization.TestParametersFromXML -->
+    </test> <!-- TestParametersFromXML2 Test -->
+  </suite> <!-- Regression Suite -->
+</testng-results>

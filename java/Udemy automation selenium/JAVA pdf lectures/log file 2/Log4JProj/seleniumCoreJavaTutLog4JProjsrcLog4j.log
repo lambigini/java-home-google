@@ -1,0 +1,3 @@
+02/10/2015 15:36:57 DEBUG TestLog4J - This is a Debug Log
+02/10/2015 15:36:57 INFO  TestLog4J - This is a Info Log
+02/10/2015 15:36:57 ERROR TestLog4J - Error in a Project

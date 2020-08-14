@@ -1,0 +1,975 @@
+
+----- Read from keyboard:
+
+package com.codegym.task.task05.task0529;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+/* 
+Console-based piggy bank
+
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        //write your code here
+        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
+while (true)
+{
+	String s = buffer.readLine();
+	if (s.equals("exit"))
+		break;
+}
+    }
+}
+
+
+
+InputStream inputStream = System.in;
+Reader inputStreamReader = new InputStreamReader(inputStream);
+BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+String name = bufferedReader.readLine(); //Read a string from the keyboard
+String sAge = bufferedReader.readLine(); //Read a string from the keyboard
+int nAge = Integer.parseInt(sAge); //Convert the string to a number.
+
+ ----------------- short version 
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+int num = Integer.parseInt(reader.readLine());
+
+String name = bufferedReader.readLine();
+--------------------------------------------------------------------------
+for loop:
+for (int i = 0; i < list.size(); i++){
+            System.out.println(list.get(i));
+        }
+--------------------------------------------------------------------------
+create ArrayList
+
+	ArrayList<Integer> list = new ArrayList<Integer>();
+--------------------------------------------------------------------------
+
+Before an object is destroyed, the Object class's finalize() method is called. Or not. If we get lucky!"
+
+public static void main(String[] args) throws Throwable {
+
+--------------------------------------------------------------------------
+null pointer execption occur with s.isEmpty()
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        ArrayList<String> list = new ArrayList<String>();
+while (true) {
+            
+            String s = reader.readLine();
+            if ( s.isEmpty()) break;
+            list.add(s);
+        }
+
+Solution: add if (s == null || s.isEmpty()) break;
+s.equals("")
+
+
+When s is null you will receive NPE, because null have no any methods.
+Try
+
+s == null || s.isEmpty()
+
+
+If s will be null the second part of the || operator will not execute, and NPE will not appear.
+
+--------------------------------------------------------------------------
+sort array in decreasing order
+NOTE: Arrays.sort(a, Collections.reverseOrder()); That will work fine with 'Array of Objects' such as Integer array but will not work with a primitive array such as int array.
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Collections; 
+
+/* 
+In decreasing order
+
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] array = new int[20];
+        for (int i = 0; i < 20; i++) {
+            array[i] = Integer.parseInt(reader.readLine());
+        }
+
+        Integer[] arrayIntToInteger = Arrays.stream(array).boxed().toArray(Integer[]::new);
+
+        sort(arrayIntToInteger);
+
+        for (int x : arrayIntToInteger) {
+            System.out.println(x);
+        }
+    }
+
+    public static void sort(Integer[] arrayIntToInteger) {
+        //write your code here
+
+        Arrays.sort(arrayIntToInteger, Collections.reverseOrder());
+
+    }
+}
+
+convert from Integer to int
+for (int i = 0; i < boxedArray.length; i++)
+        {
+            array[i] = boxedArray[i].intValue();
+        }
+
+using loop Write a program that reads 20 numbers from the keyboard and displays them in decreasing order.
+for (int i = 0; i < array.length; i++) {
+            for (int j = 1; j < array.length ; j++) {
+                if (array[j] > array[j-1])
+                {
+                    int temp = array[j-1];
+                    array[j-1] = array[j];
+                    array[j] = temp;
+
+                }
+            }
+        }
+sort string array in alphabetical order. 
+
+   public static void sort(String[] array) {
+        //write your code here
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 1; j < array.length ; j++) {
+                if ( isGreaterThan(array[j-1], array[j]))
+                {
+                    String temp = array[j-1];
+                    array[j-1] = array[j];
+                    array[j] = temp;
+
+                }
+            }
+        }
+
+    }
+
+    // String comparison method: 'a' is greater than 'b'
+    public static boolean isGreaterThan(String a, String b) {
+        return a.compareTo(b) > 0;
+    }
+}
+
+--------------------------------------------------------------------------
+@Override
+        public String toString() {
+            return "Cat's name: " + name + ", age: " + age + ", weight: " + weight + ", tail: " + tailLength;
+
+Here: System.out.println(cat);
+This is the same as: System.out.println(cat.toString());
+Role is: to print what we put in this method.
+Without overriding there would be printed only name and adress of the class.
+
+--------------------------------------------------------------------------
+create object
+public class Solution {
+    public static void main(String[] args) {
+        // write your code here
+        Human grandfather = new Human("ha", true, 90);
+        Human grandmfatherInLaw = new Human("ha in law", true, 100);
+        Human grandmother = new Human("mi", false, 89);
+        Human grandmotherInLaw = new Human("mi in Law", false, 99);
+
+        Human father = new Human(" ha ko", true, 60, grandfather, grandmother);
+        Human mother = new Human(" mi ko", false, 59,grandmfatherInLaw, grandmfatherInLaw );
+        Human son1 = new Human(" ha ko son", true, 25,father, mother);
+        Human son2 = new Human(" ha ko son2", true, 27, father, mother );
+        Human dauther = new Human(" mi ko dauther", false, 20, father, mother );
+
+        System.out.println(grandfather);
+        System.out.println(grandmfatherInLaw);
+        System.out.println(grandmother);
+        System.out.println(grandmotherInLaw);
+
+
+        System.out.println(father);
+        System.out.println(mother);
+        System.out.println(son1);
+        System.out.println(son2);
+        System.out.println(dauther);
+
+
+
+    }
+
+    public static class Human {
+        // write your code here
+        String name;
+        boolean sex;
+        int age;
+        Human father;
+        Human mother;
+
+        public Human (String name, boolean sex, int age){
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+        }
+
+        public Human (String name, boolean sex, int age, Human father, Human mother){
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+            this.father = father;
+            this.mother = mother;
+        }
+
+
+
+
+        public String toString() {
+            String text = "";
+            text += "Name: " + this.name;
+            text += ", sex: " + (this.sex ? "male" : "female");
+            text += ", age: " + this.age;
+
+            if (this.father != null)
+                text += ", father: " + this.father.name;
+
+            if (this.mother != null)
+                text += ", mother: " + this.mother.name;
+
+            return text;
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------
+Problem when work with Integer type using equal   
+
+if(list.get(i) == list.get(i+1))
+Your code is fine except for line 23. 
+Instead of "==" use .equals() method as below - 
+
+if(list.get(i).equals(list.get(i+1)))
+
+
+
+"==" will not work properly for numbers greater than 127. 128==128 will be false. Why is it so ?
+
+In case of primitive data types such as int, double etc "==" will work as expected But not for Integer objects. 
+list.get(i) returns an Integer object and not a primitive int. In case of objects "==" compares references. 
+Two compare two objects you must use .equals() method. 
+
+For more details see this link - https://stackoverflow.com/questions/1700081/why-is-128-128-false-but-127-127-is-true-when-comparing-...
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
+
+/*
+Longest sequence
+
+*/
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        //write your code here
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> count = new ArrayList<>();
+
+        for(int i = 0; i < 10; i++){
+            list.add(Integer.parseInt(reader.readLine()));
+        }
+        int c = 1;
+        for(int i = 0; i < list.size()-1; i++){
+            if(list.get(i).equals(list.get(i+1)))
+                c++;
+            else {
+                count.add(c);
+                c = 1;
+                System.out.println(count);
+            }
+        }
+        count.add(c);
+
+        Collections.sort(count, Collections.reverseOrder());
+        System.out.println(count.get(0));
+    }
+}
+
+--------------------------------------------------------------------------
+loop through hashmap using for loop
+
+
+
+  for (Map.Entry<String,Integer> x : map.entrySet()) {
+            System.out.println(x.getValue() + " " + x.getKey());
+        }
+
+--------------------------------------------------------------------------
+
+HASHMAP remove value with certain condition using iterator
+
+ public static void removeItemFromMap(HashMap<String, Integer> map) {
+        //write your code here
+
+        Iterator<Integer> iterator = map.values().iterator();
+
+        while (iterator.hasNext()) {
+
+
+
+            if (iterator.next() < 500)
+                iterator.remove();
+        }
+
+    }
+--------------------------------------------------------------------------
+HASHSET remove value with certain condition using iterator
+    public static HashSet<Integer> removeAllNumbersGreaterThan10(HashSet<Integer> set) {
+        // write your code here
+        Iterator<Integer> iterator = set.iterator();
+
+        while (iterator.hasNext()) {
+
+
+
+            if (iterator.next() > 10)
+                iterator.remove();
+        }
+//        System.out.println(set);
+
+        return set;
+
+    }
+--------------------------------------------------------------------------
+
+ hashmap remove value within condition
+package com.codegym.task.task08.task0816;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+
+import static java.util.Calendar.DAY_OF_MONTH;
+
+/*
+Kind Emma and the summer holidays
+
+*/
+
+public class Solution {
+    public static HashMap<String, Date> createMap() throws ParseException {
+        DateFormat df = new SimpleDateFormat("MMMMM d yyyy", Locale.ENGLISH);
+        HashMap<String, Date> map = new HashMap<String, Date>();
+        map.put("Stallone", df.parse("JUNE 1 1980"));
+        map.put("Harrison", df.parse("JUNE 2 1987"));
+        map.put("Alexander", df.parse("DEC 7 2013"));
+        map.put("Jacquelin
+", df.parse("SEP 20 1990"));
+        map.put("THAO", df.parse("MAY 1 1980"));
+
+        map.put("TOP", df.parse("NOVEMBER 4 1988"));
+        map.put("ME", df.parse("FEBRUARY 6 1970"));
+        map.put("ONG", df.parse("JAN 15 1950"));
+        map.put("MICHELL", df.parse("JUNE 1 2010"));
+        map.put("HANNA", df.parse("MARCH 1 2011"));
+
+        //write your code here
+        return map;
+    }
+
+    public static void removeAllSummerPeople(HashMap<String, Date> map) {
+        HashMap<String, Date> copy = new HashMap<String,Date>(map);
+
+        for(Map.Entry<String, Date> pair : copy.entrySet()){
+            Date birthDate = pair.getValue();
+            if(birthDate.getMonth() >= 5 && birthDate.getMonth() <= 7){
+                map.remove(pair.getKey());
+            }
+        }
+
+    }
+
+    public static void main(String[] args) throws ParseException {
+        HashMap<String, Date>   hashMap = createMap();
+        removeAllSummerPeople(hashMap);
+        // System.out.println(hashMap);
+
+    }
+}
+--------------------------------------------------------------------------
+
+hashmap remove same value from hashmap
+
+package com.codegym.task.task08.task0817;
+
+
+
+import java.awt.image.AreaAveragingScaleFilter;
+import java.util.*;
+
+/*
+We don't need repeats
+
+*/
+
+public class Solution {
+    public static HashMap<String, String> createMap() {
+        //write your code here
+        HashMap <String, String> hashMap = new HashMap<>();
+        for (int i= 0; i < 10; i++){
+            hashMap.put("Tran " + (i+1), "Harrison " + (i + 1));
+        }
+//        hashMap.put("Tran1 " , "Harrison1 ");
+//        hashMap.put("bi " , "Harrison1 ");
+//        hashMap.put("alex " , "jacquelin ");
+        return hashMap;
+
+    }
+
+    public static void removeFirstNameDuplicates(Map<String, String> map) {
+        //write your code here
+        HashMap<String, String> copy = new HashMap<>(map);
+        Collection<String> copyAllValue = copy.values();
+
+
+        for (String item : copyAllValue) {
+            if (Collections.frequency(copyAllValue, item) > 1) {
+                removeItemFromMapByValue(map, item);
+            }
+        }
+    }
+
+
+    public static void removeItemFromMapByValue(Map<String, String> map, String value) {
+        HashMap<String, String> copy = new HashMap<String, String>(map);
+        for (Map.Entry<String, String> pair : copy.entrySet()) {
+            if (pair.getValue().equals(value))
+                map.remove(pair.getKey());
+        }
+    }
+
+    public static void main(String[] args) {
+      HashMap hashMap = createMap();
+        // System.out.println(hashMap);
+        removeFirstNameDuplicates(hashMap);
+        // System.out.println(hashMap);
+    }
+}
+--------------------------------------------------------------------------
+initialize arraylist with array
+ ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7));
+
+String mercury = new String("Mercury");
+       String venus = new String("Venus");
+       String earth = new String("Earth");
+       String mars = new String("Mars");
+       String jupiter = new String("Jupiter");
+       String saturn = new String("Saturn");
+       String uranus = new String("Uranus");
+       String neptune = new String("Neptune");
+
+       ArrayList<String> solarSystem = new ArrayList<>(Arrays.asList(mercury, venus, earth, mars,
+               jupiter, saturn, uranus, neptune));
+
+
+ArrayList<String> values = new ArrayList<>(passportsAndNames.values());
+--------------------------------------------------------------------------
+override string object
+@Override
+   public String toString() {
+       return "Car{" +
+               "model='" + model + '\'' +
+               '}';
+   }
+--------------------------------------------------------------------------
+
+create hashset object and remove 1 set using iterator
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+/*
+Set of cats
+
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        Set<Cat> cats = createCats();
+//        printCats(cats);
+
+        //write your code here. step 3
+        Iterator<Cat> iterator = cats.iterator();
+        while (iterator.hasNext())
+        {
+            Cat firstMeo= iterator.next();
+            iterator.remove();
+            break;
+        }
+
+
+        printCats(cats);
+    }
+
+    public static Set<Cat> createCats() {
+        //write your code here. step 2
+        Set<Cat> cat = new HashSet<>();
+        Cat meo = new Cat();
+        Cat meo2 = new Cat();
+        Cat meo3 = new Cat();
+        cat.add(meo);
+        cat.add(meo2);
+        cat.add(meo3);
+//        System.out.println(cat);
+        return cat;
+    }
+
+    public static void printCats(Set<Cat> cats) {
+        // step 4
+        Iterator<Cat> iterator = cats.iterator();
+        while (iterator.hasNext())
+        {
+            Cat print= iterator.next();
+            System.out.println(print);
+        }
+    }
+
+    // step 1
+    public static class Cat {
+        private String catName;
+        private int catAge;
+        Cat(){
+            catAge= 2;
+            catName = "meo";
+
+        }
+
+    }
+
+}
+--------------------------------------------------------------------------
+toString() method
+
+  public String toString() {
+            String text = "";
+            text += "Name: " + this.name;
+            text += ", sex: " + (this.sex ? "male" : "female");
+            text += ", age: " + this.age;
+
+            int childCount = this.children.size();
+            if (childCount > 0) {
+                text += ", children: " + this.children.get(0).name;
+
+                for (int i = 1; i < childCount; i++) {
+                    Human child = this.children.get(i);
+                    text += ", " + child.name;
+                }
+            }
+            return text;
+        }
+--------------------------------------------------------------------------
+pass date time to variable
+
+public class Solution {
+    public static void main(String[] args) throws ParseException {
+        System.out.println(isDateOdd("JANUARY 2 2020"));
+    }
+
+       public static boolean isDateOdd(String date) {
+        Date d = new Date(date);
+        Date d2 = new Date(d.getYear(), 0, 0);
+
+        long d1 = ((d.getTime() - d2.getTime()) / 1000 / 24 / 60 / 60) % 2;
+        if (d1 == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+--------------------------------------------------------------------------
+
+public class SingeTonTest {
+    private static SingeTonTest instance = new SingeTonTest();
+
+    private SingeTonTest() {
+        System.out.println("Creating Obj");
+    }
+
+    public static SingeTonTest getInstance() {
+        return instance;
+    }
+}
+--------------------------------------------------------------------------
+iterate through for each loop arraylist and array
+    public static void printList(ArrayList<int[]> list) {
+        for (int[] array : list) {
+            for (int x : array) {
+                System.out.println(x);
+            }
+        }
+    }
+
+}
+--------------------------------------------------------------------------
+
+format date:  Enter a date in the format "2013-08-18"
+Display this date in the format "AUG 18, 2013".
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String input = reader.readLine();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = format.parse(input);
+
+        format.applyPattern("MMM dd, yyyy");
+        String newDateString = format.format(date);
+        System.out.println(newDateString.toUpperCase());
+
+
+MM - will display month as a number
+MMM - will display month as a 3 letters
+MMMM - will display the full name of month;
+
+--------------------------------------------------------------------------
+
+sort string array seperate number and string
+Example input:
+Cherry
+1
+Bob
+3
+Apple
+22
+0
+Watermelon
+
+Example output:
+Apple
+22
+Bob
+3
+Cherry
+1
+0
+Watermelon
+
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+/* 
+Task about algorithms
+
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list = new ArrayList<String>();
+        while (true) {
+            String s = reader.readLine();
+            if (s.isEmpty()) break;
+            list.add(s);
+        }
+
+        String[] array = list.toArray(new String[list.size()]);
+        sort(array);
+
+        for (String x : array) {
+            System.out.println(x);
+        }
+    }
+
+    public static void sort(String[] array) {
+        // write your code here
+
+        for (int i = 0; i < array.length; i++) {
+
+                if( isNumber(array[i]))
+                {
+                    //number- sort decreasing order
+                    for (int j = i+1; j < array.length; j++) {
+                        if (isNumber(array[j])) {
+                            int iConvertToInt = Integer.parseInt(array[i]); //convert string to int
+                            int jConvertToInt = Integer.parseInt(array[j]);
+                            if (jConvertToInt > iConvertToInt) {
+                                String temp = array[i];
+                                array[i] = array[j];
+                                array[j] = temp;
+                            }
+                        }
+                    }
+                } else {
+                    //word- sort ascending order
+                    for (int j = i+1; j < array.length; j++) {
+                        if ( !isNumber(array[j]) && isGreaterThan(array[i], array[j])) {
+                            String temp = array[i];
+                            array[i] = array[j];
+                            array[j] = temp;
+                        }
+                    }
+                }
+
+
+
+        }
+    }
+
+    // String comparison method: 'a' is greater than 'b'
+    public static boolean isGreaterThan(String a, String b) {
+        return a.compareTo(b) > 0;
+    }
+
+
+    // check Is the passed string a number?
+    public static boolean isNumber(String s) {
+        if (s.length() == 0) return false;
+
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            char c = chars[i];
+            if ((i != 0 && c == '-') // The string contains a hyphen
+                    || (!Character.isDigit(c) && c != '-') // or is not a number and doesn't start with a hyphen
+                    || (i == 0 && c == '-' && chars.length == 1)) // or is a single hyphen
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+--------------------------------------------------------------------------
+math in java, power of e
+ double d =  2.50256e2d;
+
+"e" means times 10 to the power of x.
+so 150e1 = 150 times 10 to the power of 1, or 1,500
+330e-4 = 330 times 10 to the power of negative 4, or 0.033
+
+The character "d" is also unicode for 100 in the equation
+--------------------------------------------------------------------------
+convert array of arraylist to array
+ ArrayList<ArrayList<String>> group = new ArrayList<ArrayList<String>>(2);
+        ArrayList<String> arrayList1 = new ArrayList<>();
+        arrayList1.add("Harrison");
+        arrayList1.add("Tran");
+
+        ArrayList<String> arrayList2 = new ArrayList<>();
+        arrayList1.add("Alexander");
+        arrayList1.add("Tran");
+
+        group.add(arrayList1);
+        group.add(arrayList2);
+
+        ArrayList<String>[] arr = new ArrayList[group.size()];
+        arr = group.toArray(arr);
+--------------------------------------------------------------------------
+check if list of string contain specific character or not
+
+for (int i = 0; i < alphabet.size();i++) {
+            Character letter = alphabet.get(i);
+            int count = 0;
+            for (int j = 0;j < list.size(); j++) {
+
+
+               if (list.get(j).indexOf(letter) >= 0)
+               // or if (list.get(j).contains(Character.toString(letter))) 
+               {
+                   count++;
+               }
+
+
+            }
+
+full code 
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        // Alphabet
+        String abc = "abcdefghijklmnopqrstuvwxyz";
+        char[] abcArray = abc.toCharArray();
+
+        ArrayList<Character> alphabet = new ArrayList<>();
+        for (char letter : abcArray) {
+            alphabet.add(letter);
+        }
+
+        // Read in strings
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            String s = reader.readLine();
+            list.add(s.toLowerCase());
+        }
+
+//        System.out.println(alphabet);
+//        System.out.println(list);
+        // write your code here
+
+        for (int i = 0; i < alphabet.size();i++) {
+            Character letter = alphabet.get(i);
+            int count = 0;
+            for (int j = 0;j < list.size(); j++) {
+
+
+               if (list.get(j).indexOf(letter) >= 0)
+               // or if (list.get(j).contains(Character.toString(letter))) 
+               {
+                   count++;
+               }
+
+
+            }
+
+            System.out.println(letter + " " + count);
+        }
+    }
+
+}
+
+using hash map
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+
+
+        // Alphabet
+        String abc = "abcdefghijklmnopqrstuvwxyz";
+        char[] abcArray = abc.toCharArray();
+
+        ArrayList<Character> alphabet = new ArrayList<>();
+        for (char letter : abcArray) {
+            alphabet.add(letter);
+        }
+
+        // Read in strings
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            String s = reader.readLine();
+            list.add(s.toLowerCase());
+        }
+
+
+        // write your code here
+        Map<Character , Integer> map = new HashMap<>();
+        for (int i = 0 ; i < list.size() ; i++){
+            String s = list.get(i);
+            for (char x : s.toCharArray())
+            {
+                if (!map.containsKey(x)){
+                    map.put(x, 1);
+                }
+                else{
+                    map.put(x, map.get(x) + 1);
+                  
+
+                }
+
+            }
+        }
+
+      //  System.out.println(map);
+
+        for (char x : abcArray)
+            if (map.get(x) != null) {
+                System.out.println(x + " " + map.get(x));
+            } else {
+                System.out.println(x + " " + 0);
+            }
+    }
+}
+
+--------------------------------------------------------------------------
+ get minumum of array 
+
+  int min = array[0] ;
+        int index= 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+                index = i;
+            }
+        }
+
+
+--------------------------------------------------------------------------
+get name of class: drink.getClass().getSimpleName()
+
+
+--------------------------------------------------------------------------
+Read a file name from the console.Display the contents of the file in the console (on the screen).
+
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String input = reader.readLine();
+        FileInputStream inputStream = new FileInputStream(input);
+        while (inputStream.available() > 0){
+
+            char c = (char)inputStream.read();
+
+            System.out.print(c);
+        }
+        inputStream.close();
+        reader.close();
+
+--------------------------------------------------------------------------
+
+Writing to a file from the console
+1. Read a file name from the console.
+2. Read lines from the console until the user enters the "exit".
+3. Write all the entered lines to the file, each on a new line.
+
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+       BufferedWriter writer = new BufferedWriter( new FileWriter(new File(reader.readLine())));
+       while (true){
+           String input = reader.readLine();
+           if (input.equals("exit"))
+           {
+               writer.write(input);
+//               writer.write(System.getProperty( "line.separator" ));
+               break;
+           }
+           writer.write(input);
+           writer.write(System.getProperty( "line.separator" ));
+       }
+        reader.close();
+       writer.close();
+--------------------------------------------------------------------------
+
+read file 2 times because only can read 1 byte at a time 
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        InputStream inputStream = null;
+        String s = reader.readLine();
+        inputStream = new FileInputStream(s);
+
+        reader.close();
+
+
+
+
+        ArrayList<Integer> numList = new ArrayList<>();
+        BufferedReader readLine = new BufferedReader(new InputStreamReader(inputStream));
+       String line = null;
+                line = readLine.readLine();
+        while ( line != null){
+//
+            numList.add(Integer.parseInt(line));
+            line = readLine.readLine();
+        }
+
+
+
+

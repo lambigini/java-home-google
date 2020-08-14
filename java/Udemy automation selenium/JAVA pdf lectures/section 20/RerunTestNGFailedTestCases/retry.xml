@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1">
+	  <listeners>
+	<listener class-name="com.sample.test.RetryListner"></listener>
+	</listeners>
+
+
+	<test name="Login">
+		<classes>
+			<class name="com.sample.test.TestCases" />
+		</classes>
+	</test>
+	
+</suite>

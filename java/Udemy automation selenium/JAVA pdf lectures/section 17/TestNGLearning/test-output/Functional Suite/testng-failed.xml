@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functional Suite]">
+  <listeners>
+    <listener class-name="customListeners.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Validate Title Test(failed)">
+    <classes>
+      <class name="testcases.TestCase2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateTitles"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.TestCase2 -->
+    </classes>
+  </test> <!-- Validate Title Test(failed) -->
+  <test thread-count="5" name="Dependency Test(failed)">
+    <classes>
+      <class name="testcases.TestCase3">
+        <methods>
+          <include name="doLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="doUserReg"/>
+        </methods>
+      </class> <!-- testcases.TestCase3 -->
+    </classes>
+  </test> <!-- Dependency Test(failed) -->
+  <test thread-count="5" name="Failure Test(failed)">
+    <classes>
+      <class name="testcases.TestFailure">
+        <methods>
+          <include name="doLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.TestFailure -->
+    </classes>
+  </test> <!-- Failure Test(failed) -->
+</suite> <!-- Failed suite [Functional Suite] -->

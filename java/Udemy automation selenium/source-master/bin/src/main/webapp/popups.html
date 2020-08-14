@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/modal.js" type="text/javascript"></script>
+    <title>Pop-ups</title>
+</head>
+<body>
+<div class="container">
+    <h1>Pop-ups</h1>
+
+    <h2>JavaScript</h2>
+    <a id="alert" href="#" onclick="alert('Alert!');" class="btn btn-default">Alert</a>
+    <a href="#" onclick="confirm('Confirm?');" class="btn btn-default">Confirm</a>
+    <a href="#" onclick="prompt('Prompt?', 'Enter text here');" class="btn btn-default">Prompt</a>
+
+    <h2>Synthetic</h2>
+    <a href="#" class="btn btn-default" data-toggle="modal" data-target="#basicModal">Modal</a>
+
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal</h4>
+                </div>
+                <div class="modal-body">
+                    <p><input class="span12" type="text"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Ok</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Authentication</h2>
+    <a href="auth.html" class="btn btn-default">Authentication</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   ====================================================================
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   ====================================================================
+-->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "document-v20.dtd">
+
+<document>
+    <header>
+        <title>Apache POI - Download Release Artifacts</title>
+    </header>
+
+    <body>
+        <section>
+            <title>Available Downloads</title>
+            <p>
+                This page provides instructions on how to download and verify the Apache POI release artifacts. There
+                are different versions available depending on how stable your code should be.
+            </p>
+            <ul>
+                <li>
+                    <a href="#POI-4.1.1">The latest stable release is Apache POI 4.1.1</a>
+                </li>
+                <li>
+                    <a href="#nightly">Nightly/CI builds are available as well</a>
+                </li>
+                <li>
+                    <a href="#archive">Archives of all prior releases</a>
+                </li>
+            </ul>
+            <p>
+                Apache POI releases are available under the
+                <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0.</a>
+                See the NOTICE file contained in each release artifact for applicable copyright attribution notices.
+            </p>
+            <p>
+                To ensure that you have downloaded the true release you should
+                <a href="#verify">verify the integrity</a>
+                of the files using the signatures and checksums available from this page.
+            </p>
+        </section>
+
+        <!-- latest final release -->
+
+        <section id="POI-4.1.1"><title>20 October 2019 - POI 4.1.1 available</title>
+            <p>The Apache POI team is pleased to announce the release of 4.1.1.
+                Featured are a handful of new areas of functionality and numerous bug fixes.</p>
+            <p>A summary of changes is available in the
+                <a href="https://www.apache.org/dyn/closer.lua/poi/dev/RELEASE-NOTES-4.1.1.txt">Release Notes</a>.
+                A full list of changes is available in the <a href="site:changes">change log</a>.
+                People interested should also follow the <a href="site:mailinglists">dev list</a>
+                to track progress.</p>
+            <p>
+                The POI source release as well as the pre-built binary deployment packages are listed below.
+                Pre-built versions of all <a href="site:components">POI components</a>
+                are available in the central Maven repository under Group ID "org.apache.poi" and Version
+                "4.1.1".
+            </p>
+            <section id="POI-4.1.1-bin"><title>Binary Distribution</title>
+                <ul>
+                    <li>
+                        <a href="https://www.apache.org/dyn/closer.lua/poi/release/bin/poi-bin-4.1.1-20191023.tar.gz">poi-bin-4.1.1-20191023.tar.gz</a>
+                        (28.13 MB, <a href="https://www.apache.org/dist/poi/release/bin/poi-bin-4.1.1-20191023.tar.gz.asc">signature (.asc)</a>,
+                        checksum: <a href="https://www.apache.org/dist/poi/release/bin/poi-bin-4.1.1-20191023.tar.gz.sha256">SHA-256</a>,
+                        <a href="https://www.apache.org/dist/poi/release/bin/poi-bin-4.1.1-20191023.tar.gz.sha512">SHA-512</a>)
+                    </li>
+                    <li>
+                        <a href="https://www.apache.org/dyn/closer.lua/poi/release/bin/poi-bin-4.1.1-20191023.zip">poi-bin-4.1.1-20191023.zip</a>
+                        (38.57 MB, <a href="https://www.apache.org/dist/poi/release/bin/poi-bin-4.1.1-20191023.zip.asc">signature (.asc)</a>,
+                        checksum: <a href="https://www.apache.org/dist/poi/release/bin/poi-bin-4.1.1-20191023.zip.sha256">SHA-256</a>,
+                        <a href="https://www.apache.org/dist/poi/release/bin/poi-bin-4.1.1-20191023.zip.sha512">SHA-512</a>)
+                    </li>
+                </ul>
+            </section>
+            <section id="POI-4.1.1-src"><title>Source Distribution</title>
+                <ul>
+                    <li>
+                        <a href="https://www.apache.org/dyn/closer.lua/poi/release/src/poi-src-4.1.1-20191023.tar.gz">poi-src-4.1.1-20191023.tar.gz</a>
+                        (96.93 MB, <a href="https://www.apache.org/dist/poi/release/src/poi-src-4.1.1-20191023.tar.gz.asc">signature (.asc)</a>,
+                        checksum: <a href="https://www.apache.org/dist/poi/release/src/poi-src-4.1.1-20191023.tar.gz.sha256">SHA-256</a>,
+                        <a href="https://www.apache.org/dist/poi/release/src/poi-src-4.1.1-20191023.tar.gz.sha512">SHA-512</a>)
+                    </li>
+                    <li>
+                        <a href="https://www.apache.org/dyn/closer.lua/poi/release/src/poi-src-4.1.1-20191023.zip">poi-src-4.1.1-20191023.zip</a>
+                        (101.23 MB, <a href="https://www.apache.org/dist/poi/release/src/poi-src-4.1.1-20191023.zip.asc">signature (.asc)</a>,
+                        checksum: <a href="https://www.apache.org/dist/poi/release/src/poi-src-4.1.1-20191023.zip.sha256">SHA-256</a>,
+                        <a href="https://www.apache.org/dist/poi/release/src/poi-src-4.1.1-20191023.zip.sha512">SHA-512</a>)
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="nightly">
+            <title>Nightly Builds</title>
+            <p>The POI nightly builds are run on the <a href="https://builds.apache.org/view/P/view/POI/">Jenkins</a>
+                continuous integration server.<br/>
+                <strong>These builds should not be used in production</strong>: they are mostly intended for use by
+                developers to help with resolving bugs and evaluating new features or users who want to try out the
+                latest version.
+            </p>
+            <ul>
+                <li>
+                    <a href="https://builds.apache.org/view/P/view/POI/job/POI-DSL-1.8/lastSuccessfulBuild/artifact/build/dist/">
+                        Last Successful Jenkins build for POI-trunk
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="verify">
+            <title>Verify</title>
+            <p>
+                It is essential that you verify the integrity of the downloaded files using the PGP and SHA2 signatures.
+                Please read
+                <a href="https://httpd.apache.org/dev/verification.html">Verifying Apache HTTP Server Releases</a>
+                for more information on why you should verify our releases. This page provides detailed instructions
+                which you can use for POI artifacts.
+            </p>
+            <p>
+                The PGP signatures can be verified using PGP or GPG. First download the
+                <a href="https://www.apache.org/dist/poi/KEYS">KEYS</a>
+                file as well as the .asc signature files for the relevant release packages. Make sure you get these
+                files from the main distribution directory, rather than from a mirror.
+                Then <a href="https://www.apache.org/info/verification.html">verify the signatures</a>.
+            </p>
+            <p>Batch check of all distribution files:</p>
+            <source>
+                find . -name "*.sha256" -type f -execdir sha256sum -c {} \;
+                find . -name "*.sha512" -type f -execdir sha512sum -c {} \;
+                find . -name "*.asc" -exec gpg --no-secmem-warning --verify {} \;
+            </source>
+            <p>Sample verification of poi-bin-3.5-FINAL-20090928.tar.gz</p>
+            <source>% gpg --import KEYS
+gpg: key 12DAE9BE: "Glen Stampoultzis &lt;glens at apache dot org&gt;" not changed
+gpg: key 4CEED75F: "Nick Burch &lt;nick at gagravarr dot org&gt;" not changed
+gpg: key 84B5A42E: "Rainer Klute &lt;rainer.klute at gmx dot de&gt;" not changed
+gpg: key F5BB52CD: "Yegor Kozlov &lt;yegor.kozlov at gmail dot com&gt;" not changed
+gpg: Total number processed: 4
+gpg:              unchanged: 4
+% gpg --verify poi-bin-3.5-FINAL-20090928.tar.gz.asc poi-bin-3.5-FINAL-20090928.tar.gz
+gpg: Signature made Mon Sep 28 10:28:25 2009 PDT using DSA key ID F5BB52CD
+gpg: Good signature from "Yegor Kozlov &lt;yegor.kozlov at gmail dot com&gt;"
+gpg:                 aka "Yegor Kozlov &lt;yegor at dinom dot ru&gt;"
+gpg:                 aka "Yegor Kozlov &lt;yegor at apache dot org&gt;"
+Primary key fingerprint: 7D77 0C77 6CE7 754E E6AF  23AA 6934 0A02 F5BB 52CD
+% gpg --fingerprint F5BB52CD
+pub   1024D/F5BB52CD 2007-06-18 [expires: 2012-06-16]
+       Key fingerprint = 7D77 0C77 6CE7 754E E6AF  23AA 6934 0A02 F5BB 52CD
+uid                  Yegor Kozlov &lt;yegor.kozlov at gmail dot com&gt;
+uid                  Yegor Kozlov &lt;yegor at dinom dot ru&gt;
+uid                  Yegor Kozlov &lt;yegor at apache dot org&gt;
+sub   4096g/7B45A98A 2007-06-18 [expires: 2012-06-16]</source>
+        </section>
+        <section id="archive">
+            <title>Release Archives</title>
+            <p>
+                Apache POI became a top level project in June 2007 and POI 3.0 artifacts were re-released. Prior to that
+                date POI was a sub-project of
+                <a href="https://jakarta.apache.org/">Apache Jakarta.</a>
+            </p>
+            <ul>
+                <li>
+                    <a href="https://archive.apache.org/dist/poi/release/bin/">Binary Artifacts</a>
+                </li>
+                <li>
+                    <a href="https://archive.apache.org/dist/poi/release/src/">Source Artifacts</a>
+                </li>
+                <li>
+                    <a href="https://archive.apache.org/dist/poi/">Keys</a>
+                </li>
+                <li>
+                    <a href="https://archive.apache.org/dist/jakarta/poi/release/">Artifacts from prior to 3.0</a>
+                </li>
+            </ul>
+        </section>
+    </body>
+    <footer>
+        <legal>
+            Copyright (c) @year@ The Apache Software Foundation. All rights reserved.<br/>
+            Apache POI, POI, Apache, the Apache feather logo, and the Apache POI project logo are trademarks of The
+            Apache Software Foundation.
+        </legal>
+    </footer>
+</document>

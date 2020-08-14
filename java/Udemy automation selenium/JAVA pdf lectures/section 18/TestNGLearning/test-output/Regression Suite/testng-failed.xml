@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <test thread-count="5" name="Regression Validate Title Test(failed)">
+    <classes>
+      <class name="regression.TestCase2">
+        <methods>
+          <include name="validateTitles"/>
+        </methods>
+      </class> <!-- regression.TestCase2 -->
+    </classes>
+  </test> <!-- Regression Validate Title Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

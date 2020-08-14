@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <script src="js/jquery.min.js"></script>
+    <title>Web Notification</title>
+</head>
+<body>
+<div class="container">
+    <h1>Web Notification</h1>
+
+    <p>
+        <a href="javascript:notify('A Web Notification', 'A web notification body.');" class="btn btn-default"
+                >Show A Web Notification</a>
+        <a href="javascript:notify('Another Web Notification.', 'Another web notification body.');"
+           class="btn btn-default"
+                >Show Another Web Notification</a>
+    </p>
+</div>
+<script>
+    function notify(title, body) {
+        var n = new Notification(title, {body: body});
+        n.onshow = function() {
+            console.log(title + " shown");
+        };
+        n.onclose = function() {
+            console.log(title + " closed");
+        };
+    }
+
+    $(function() {
+        Notification.requestPermission(function (status) {
+            if (Notification.permission !== status) {
+                Notification.permission = status;
+            }
+        })
+    });
+
+</script>
+</body>
+</html>

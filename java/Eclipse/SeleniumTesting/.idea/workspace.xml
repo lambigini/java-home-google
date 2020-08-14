@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc86e964-b38a-4a20-93cf-3c4acc9374d2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cYJGlhpFne15T0apm2YBkIJvhv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="assigment3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testcases.assigment3" />
+      <module name="SeleniumTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.assigment3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc86e964-b38a-4a20-93cf-3c4acc9374d2" name="Default Changelist" comment="" />
+      <created>1590699500496</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590699500496</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="679" height="195" key="GridCell.Tab.0.bottom" timestamp="1590701727402">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="679" height="195" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1590701727402" />
+    <state width="679" height="195" key="GridCell.Tab.0.center" timestamp="1590701727399">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="679" height="195" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1590701727399" />
+    <state width="679" height="195" key="GridCell.Tab.0.left" timestamp="1590701727396">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="679" height="195" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1590701727396" />
+    <state width="679" height="195" key="GridCell.Tab.0.right" timestamp="1590701727401">
+      <screen x="0" y="23" width="1440" height="810" />
+    </state>
+    <state width="679" height="195" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1590701727401" />
+  </component>
+</project>

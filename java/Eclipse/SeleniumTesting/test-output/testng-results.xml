@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="257" started-at="2020-07-07T18:54:45 PDT" finished-at="2020-07-07T18:54:46 PDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="257" started-at="2020-07-07T18:54:45 PDT" finished-at="2020-07-07T18:54:46 PDT">
+      <class name="testcases.TestLoginTest">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TestLoginTest@394e1a0f]" name="testLogin" duration-ms="15" started-at="2020-07-07T18:54:46 PDT" data-provider="dp1" finished-at="2020-07-07T18:54:46 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[harrison]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[234234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TestLoginTest@394e1a0f]" name="testLogin" duration-ms="11" started-at="2020-07-07T18:54:46 PDT" data-provider="dp1" finished-at="2020-07-07T18:54:46 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testUserRegis(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TestLoginTest@394e1a0f]" name="testUserRegis" duration-ms="3" started-at="2020-07-07T18:54:46 PDT" data-provider="dp1" finished-at="2020-07-07T18:54:46 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[harrison]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[234234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sfsd@gmail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegis -->
+        <test-method status="PASS" signature="testUserRegis(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TestLoginTest@394e1a0f]" name="testUserRegis" duration-ms="4" started-at="2020-07-07T18:54:46 PDT" data-provider="dp1" finished-at="2020-07-07T18:54:46 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alex]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ertre@yahoomail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegis -->
+      </class> <!-- testcases.TestLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

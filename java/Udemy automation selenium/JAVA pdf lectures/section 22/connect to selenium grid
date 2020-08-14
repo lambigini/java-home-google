@@ -1,0 +1,53 @@
+
+
+
+To find the process try:
+
+sudo lsof -i :portNumber
+
+Kill the process which is currently using the port using its PID
+
+kill PID
+
+and then check to see if the port closed. If not, try:
+
+kill -9 PID
+
+I would only do the following if the previous didnt work
+
+sudo kill -9 PID
+
+Just to be safe. Again depending on how you opened the port, this may not matter.
+
+
+
+cd Google\ Drive/Coding/java/Udemy\ automation\ selenium/jar\ files/
+
+
+
+
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+java -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http:/ocalhost:4444/grid/register -port 5555
+
+java -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http:/ocalhost:4444/grid/register -port 5555 -browser browserName=firefox -browser browserName=chrome
+
+java -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http:/ocalhost:4444/grid/register -port 5555 -browser browserName=firefox -browser browserName=chrome,maxInstances=3 -browser browserName=iexplore
+
+
+/Users/harrisontranimac/Downloads/geckodriver;,m;
+/Users/harrisontranimac/Downloads/chromedriver
+
+
+java -Dwebdriver.chrome.driver=/Use/harrisontranimac/Downloads/chromedriver -Dwebdriver.firefox.bin=/Users/harrisontranimac/Downloads/geckodriver  -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 6666 -browser browserName=firefox,maxInstances=5 -browser browserName=chrome,maxInstances=5 -browser browserName=iexplore -maxSession 5
+
+
+java -Dwebdriver.chrome.driver=/Use/harrisontranimac/Downloads/chromedriver -Dwebdriver.firefox.bin=/Users/harrisontranimac/Downloads/geckodriver  -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 7777 -browser browserName=chrome,maxInstances=1 -maxSession 1
+
+
+
+java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hub.json
+
+java -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodriver -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig node1.json
+
+java  -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodriver -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig node2.json

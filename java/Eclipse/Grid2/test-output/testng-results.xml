@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestNG Learning" duration-ms="42543" started-at="2020-07-30T17:27:51 PDT" finished-at="2020-07-30T17:28:34 PDT">
+    <groups>
+    </groups>
+    <test name="Login Test_Chrome" duration-ms="42543" started-at="2020-07-30T17:27:51 PDT" finished-at="2020-07-30T17:28:34 PDT">
+      <class name="testSample">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSample@610694f1]" name="testLogin" duration-ms="38767" started-at="2020-07-30T17:27:51 PDT" data-provider="getData" finished-at="2020-07-30T17:28:30 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lambigini87@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSample@610694f1]" name="testLogin" duration-ms="41947" started-at="2020-07-30T17:27:51 PDT" data-provider="getData" finished-at="2020-07-30T17:28:33 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lambigini87@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testSample@610694f1]" name="testLogin" duration-ms="42463" started-at="2020-07-30T17:27:51 PDT" data-provider="getData" finished-at="2020-07-30T17:28:34 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[lambigini87@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sdfsdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- testSample -->
+    </test> <!-- Login Test_Chrome -->
+  </suite> <!-- TestNG Learning -->
+</testng-results>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Learning" parallel="tests" thread-count="5">
+  <test  name="Login Test_Chrome">
+  
+    <classes>
+      <class name="testSample"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+ 
+</suite> <!-- Suite -->

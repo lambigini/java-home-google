@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="com.sample.test.RetryListner"/>
+  </listeners>
+  <test name="Login(failed)">
+    <classes>
+      <class name="com.sample.test.TestCases">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyForgotPasswordPage"/>
+        </methods>
+      </class> <!-- com.sample.test.TestCases -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

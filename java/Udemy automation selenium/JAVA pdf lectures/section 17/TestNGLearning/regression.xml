@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+  <test name="Regression Login Test">
+    <classes>
+     
+      <class name="regression.TestCase1"/>
+   
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Regression Validate Title Test">
+    <classes>
+      <class name="regression.TestCase2"/>
+     
+   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
