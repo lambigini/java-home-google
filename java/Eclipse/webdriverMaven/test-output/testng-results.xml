@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2879" started-at="2020-08-15T06:45:32Z" finished-at="2020-08-15T06:45:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2879" started-at="2020-08-15T06:45:32Z" finished-at="2020-08-15T06:45:35Z">
+      <class name="webdriverMaven.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:webdriverMaven.LoginTest@20d3d15a]" name="setUp" is-config="true" duration-ms="5857" started-at="2020-08-15T06:45:26Z" finished-at="2020-08-15T06:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:webdriverMaven.LoginTest@20d3d15a]" name="doLogin" duration-ms="2825" started-at="2020-08-15T06:45:32Z" finished-at="2020-08-15T06:45:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:webdriverMaven.LoginTest@20d3d15a]" name="tearDown" is-config="true" duration-ms="5223" started-at="2020-08-15T06:45:35Z" finished-at="2020-08-15T06:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- webdriverMaven.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
