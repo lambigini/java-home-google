@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Data_Driven_Basics">
+              <span class="suite-name border-skipped">Data Driven Basics</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Data_Driven_Basics">
+                    <span>F:\seleniumworkspaces\LiveProjects\DataDrivenFramework\src\test\resources\runner\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Data_Driven_Basics">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Data_Driven_Basics">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Data_Driven_Basics">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Data_Driven_Basics">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Data_Driven_Basics">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Data_Driven_Basics">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,  1 skipped,  5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Data_Driven_Basics" class="hide-methods skipped suite-Data_Driven_Basics"> (hide)</a> <!-- hide-methods skipped suite-Data_Driven_Basics -->
+                      <a href="#" panel-name="suite-Data_Driven_Basics" class="show-methods skipped suite-Data_Driven_Basics"> (show)</a> <!-- show-methods skipped suite-Data_Driven_Basics -->
+                    </span>
+                    <div class="method-list-content skipped suite-Data_Driven_Basics">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Basics" title="com.w2a.testcases.AddCustomerTest" hash-for-method="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=N, firstname=Rahul})">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=N, firstname=Rahul})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Data_Driven_Basics -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Data_Driven_Basics" class="hide-methods passed suite-Data_Driven_Basics"> (hide)</a> <!-- hide-methods passed suite-Data_Driven_Basics -->
+                      <a href="#" panel-name="suite-Data_Driven_Basics" class="show-methods passed suite-Data_Driven_Basics"> (show)</a> <!-- show-methods passed suite-Data_Driven_Basics -->
+                    </span>
+                    <div class="method-list-content passed suite-Data_Driven_Basics">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Basics" title="com.w2a.testcases.AddCustomerTest" hash-for-method="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Sehgal, runmode=Y, firstname=Rohit...)">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Sehgal, runmode=Y, firstname=Rohit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Basics" title="com.w2a.testcases.AddCustomerTest" hash-for-method="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Raman})">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Raman})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Basics" title="com.w2a.testcases.AddCustomerTest" hash-for-method="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Ishita...)">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Ishita...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Basics" title="com.w2a.testcases.BankManagerLoginTest" hash-for-method="bankManagerLoginTest">bankManagerLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Data_Driven_Basics" title="com.w2a.testcases.OpenAccountTest" hash-for-method="openAccountTest({currency=Rupee, customer=Raman Arora})">openAccountTest({currency=Rupee, customer=Raman Arora})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Data_Driven_Basics -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Data_Driven_Basics" class="panel Data_Driven_Basics">
+          <div class="suite-Data_Driven_Basics-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.w2a.testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=N, firstname=Rahul})">
+                  </a> <!-- addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=N, firstname=Rahul}) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=N, firstname=Rahul})</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test case as the Run mode for data set is NO
+	at com.w2a.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:22)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Basics-class-skipped -->
+          <div class="suite-Data_Driven_Basics-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.w2a.testcases.BankManagerLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankManagerLoginTest">
+                  </a> <!-- bankManagerLoginTest -->
+                  <span class="method-name">bankManagerLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Basics-class-passed -->
+          <div class="suite-Data_Driven_Basics-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.w2a.testcases.OpenAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openAccountTest({currency=Rupee, customer=Raman Arora})">
+                  </a> <!-- openAccountTest({currency=Rupee, customer=Raman Arora}) -->
+                  <span class="method-name">openAccountTest</span>
+                  <span class="parameters">({currency=Rupee, customer=Raman Arora})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Basics-class-passed -->
+          <div class="suite-Data_Driven_Basics-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.w2a.testcases.AddCustomerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Sehgal, runmode=Y, firstname=Rohit...)">
+                  </a> <!-- addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Sehgal, runmode=Y, firstname=Rohit...) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">({alerttext=Customer added successfully, postcode=A234wd, lastname=Sehgal, runmode=Y, firstname=Rohit})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Raman})">
+                  </a> <!-- addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Raman}) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Raman})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Ishita...)">
+                  </a> <!-- addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Ishita...) -->
+                  <span class="method-name">addCustomerTest</span>
+                  <span class="parameters">({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Ishita})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Data_Driven_Basics-class-passed -->
+        </div> <!-- panel Data_Driven_Basics -->
+        <div panel-name="test-xml-Data_Driven_Basics" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\seleniumworkspaces\LiveProjects\DataDrivenFramework\src\test\resources\runner\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Data Driven Basics&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.w2a.listeners.CustomListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Bank Manager Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.w2a.testcases.BankManagerLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Bank Manager Login Test --&gt;
+  &lt;test name=&quot;Add Customer Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.w2a.testcases.AddCustomerTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add Customer Test --&gt;
+  &lt;test name=&quot;Open Account Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.w2a.testcases.OpenAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Open Account Test --&gt;
+&lt;/suite&gt; &lt;!-- Data Driven Basics --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Data_Driven_Basics" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Data Driven Basics</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Bank Manager Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add Customer Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Open Account Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Data_Driven_Basics" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Data Driven Basics</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Data_Driven_Basics" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Data Driven Basics</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Data_Driven_Basics');
+function tableData_Data_Driven_Basics() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addCustomerTest')
+data.setCell(0, 2, 'com.w2a.testcases.AddCustomerTest')
+data.setCell(0, 3, 4624);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addCustomerTest')
+data.setCell(1, 2, 'com.w2a.testcases.AddCustomerTest')
+data.setCell(1, 3, 4495);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addCustomerTest')
+data.setCell(2, 2, 'com.w2a.testcases.AddCustomerTest')
+data.setCell(2, 3, 4347);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'bankManagerLoginTest')
+data.setCell(3, 2, 'com.w2a.testcases.BankManagerLoginTest')
+data.setCell(3, 3, 3546);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'openAccountTest')
+data.setCell(4, 2, 'com.w2a.testcases.OpenAccountTest')
+data.setCell(4, 3, 2793);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addCustomerTest')
+data.setCell(5, 2, 'com.w2a.testcases.AddCustomerTest')
+data.setCell(5, 3, 2);
+window.suiteTableData['Data_Driven_Basics']= { tableData: data, tableDiv: 'times-div-Data_Driven_Basics'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <div id="times-div-Data_Driven_Basics">
+              </div> <!-- times-div-Data_Driven_Basics -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Data_Driven_Basics" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Data Driven Basics</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">bankManagerLoginTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><br>Verification failure : expected [abc] but found [xyz]<br></span>
+                <span class="reporter-method-output"><a target="_blank" href=Wed_Jan_31_19_56_26_IST_2018.jpg><img src=Wed_Jan_31_19_56_26_IST_2018.jpg height=200 width=200></img></a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Data_Driven_Basics" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Data_Driven_Basics" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.OpenAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.BankManagerLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">bankManagerLoginTest</span>
+                <span class="method-start">11505 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.AddCustomerTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Raman})</span>
+                <span class="method-start">15525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=N, firstname=Rahul})</span>
+                <span class="method-start">20229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Arora, runmode=Y, firstname=Ishita...)</span>
+                <span class="method-start">20297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addCustomerTest({alerttext=Customer added successfully, postcode=A234wd, lastname=Sehgal, runmode=Y, firstname=Rohit...)</span>
+                <span class="method-start">24845 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.OpenAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openAccountTest({currency=Rupee, customer=Raman Arora})</span>
+                <span class="method-start">29289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32162 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

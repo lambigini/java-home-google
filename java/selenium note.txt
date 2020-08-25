@@ -309,4 +309,11 @@ public class TestParametersXML {
   </test> <!-- Test -->
 </suite> <!-- Suite -->
 
+----------------------- -----------------------
+data driven, page object model, hybrid are approach
+get the current file path:System.getProperty("user.dir")
+current root: "./"
+string replace old character with new character" d.toString().replace(":", "_").replace(" ", "_")
+generate log with time stamp: .../app_${current.date}_log.txt
+
 

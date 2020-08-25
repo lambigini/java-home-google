@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Data Driven Basics" duration-ms="1612" started-at="2020-08-24T04:46:34Z" finished-at="2020-08-24T04:46:35Z">
+    <groups>
+    </groups>
+    <test name="LoginTest" duration-ms="1612" started-at="2020-08-24T04:46:34Z" finished-at="2020-08-24T04:46:35Z">
+      <class name="com.w2a.testcases.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.LoginTest@7219ec67]" name="setUp" is-config="true" duration-ms="4793" started-at="2020-08-23T21:46:29Z" finished-at="2020-08-23T21:46:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.LoginTest@7219ec67]" name="loginAsBankManager" duration-ms="1585" started-at="2020-08-23T21:46:34Z" finished-at="2020-08-23T21:46:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsBankManager -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.w2a.testcases.LoginTest@7219ec67]" name="tearDown" is-config="true" duration-ms="217" started-at="2020-08-23T21:46:35Z" finished-at="2020-08-23T21:46:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.w2a.testcases.LoginTest -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Data Driven Basics -->
+</testng-results>
