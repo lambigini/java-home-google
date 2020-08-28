@@ -1,24 +1,29 @@
 package com.w2a.base;
 
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import javax.servlet.jsp.tagext.TryCatchFinally;
+
 
 import org.apache.log4j.Logger;
-import org.omg.CORBA.TIMEOUT;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+
+import com.w2a.utilities.ExcelReader;
 
 public class TestBase {
 	/*
@@ -39,8 +44,10 @@ public class TestBase {
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
 	public static Logger log = org.apache.log4j.Logger.getLogger("devpinoyLogger");
-
+	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "/src/test/resources/excel/testData.xlsx");
+	public static WebDriverWait wait ;
 	
+	@BeforeMethod
 	@BeforeSuite
 	public void setUp() throws IOException {
 
@@ -86,6 +93,7 @@ public class TestBase {
 	}
 
 	
+	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
 		if (driver != null) {
