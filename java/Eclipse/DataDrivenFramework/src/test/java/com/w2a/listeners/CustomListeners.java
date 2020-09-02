@@ -7,21 +7,25 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import com.relevantcodes.extentreports.LogStatus;
+import com.w2a.base.TestBase;
 import com.w2a.utilities.TestUtil;
 
-public class CustomListeners implements ITestListener {
+public class CustomListeners extends TestBase implements ITestListener {
 
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+	test =rep.startTest(result.getName().toUpperCase());
 		
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
-		
+		TestBase.test.log(LogStatus.PASS, result.getName().toUpperCase(), "Pass");
+		rep.endTest(test);
+		rep.flush();
 	}
 
 	public void onTestFailure(ITestResult result) {
+		
 		System.setProperty("org.uncommons.reportng.escape-output","false");
 		
 		try {
@@ -31,11 +35,18 @@ public class CustomListeners implements ITestListener {
 			e.printStackTrace();
 		}
 		
+		test.log(LogStatus.FAIL, result.getName().toUpperCase(), "Fail");
+		test.log(LogStatus.FAIL, result.getThrowable());
+		test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+		
+		
 		Reporter.log("Login successfully executed");
 		Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+">Screenshot</a>");
 		Reporter.log("<br>");
 		Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img src="+TestUtil.screenshotName+"></img></a>");
-
+		
+		rep.endTest(test);
+		rep.flush();
 		
 	}
 

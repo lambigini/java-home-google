@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeMethod;
 import java.io.FileInputStream;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -18,12 +19,18 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.ClickAction;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.utilities.ExcelReader;
+import com.w2a.utilities.ExtentManager;
 
 public class TestBase {
 	/*
@@ -46,6 +53,39 @@ public class TestBase {
 	public static Logger log = org.apache.log4j.Logger.getLogger("devpinoyLogger");
 	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "/src/test/resources/excel/testData.xlsx");
 	public static WebDriverWait wait ;
+	public ExtentReports rep = ExtentManager.getInstance();
+	public static ExtentTest test;
+	
+	public void click(String locator) {
+		if (locator.endsWith("_CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "click on " + locator);
+		} else if (locator.endsWith("_XPATH")) {
+			driver.findElement(By.xpath(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "click on " + locator);
+		} else if (locator.endsWith("_ID")) {
+			driver.findElement(By.id(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "click on " + locator);
+		}
+		
+	}
+	
+	public void type(String locator, String value) {
+		
+		if(locator.endsWith("_CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "type in " + locator +" enter value as " + value);
+		} else if (locator.endsWith("_XPATH")) {
+			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "type in " + locator +" enter value as " + value);
+		} else if (locator.endsWith("_ID")) {
+			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "type in " + locator +" enter value as " + value);
+		}
+		
+	}
+	
+
 	
 	@BeforeMethod
 	@BeforeSuite
