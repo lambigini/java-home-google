@@ -1,6 +1,8 @@
 package com.w2a.base;
 
 
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import java.io.FileInputStream;
@@ -31,6 +33,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.utilities.ExcelReader;
 import com.w2a.utilities.ExtentManager;
+import com.w2a.utilities.TestUtil;
 
 public class TestBase {
 	/*
@@ -85,7 +88,26 @@ public class TestBase {
 		
 	}
 	
-
+public static void verifyEqual(String expected, String actual) throws IOException {
+	try {
+		Assert.assertEquals(actual, expected);
+	} catch ( Throwable t) {
+		
+		TestUtil.captureScreenshot();
+		//report ng
+		
+		Reporter.log("<br>" + "Verification failure: " +t.getMessage() + "br");
+		Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img src="+TestUtil.screenshotName+"></img></a>");
+		Reporter.log("<br>");
+		Reporter.log("<br>");
+		
+		//extent reports
+		test.log(LogStatus.FAIL, " Verificatin failed with exception" +  t.getMessage());
+		
+		test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenshotName));
+		
+	}
+}
 	
 	@BeforeMethod
 	@BeforeSuite

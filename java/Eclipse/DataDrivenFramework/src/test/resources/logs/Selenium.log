@@ -1,13 +1,22 @@
-16:15:14,218 DEBUG devpinoyLogger<strong>{1}</strong>:57 - config file loaded
-16:15:14,221 DEBUG devpinoyLogger<strong>{1}</strong>:62 - OR file loaded
-16:15:17,932 DEBUG devpinoyLogger<strong>{1}</strong>:74 - Chrome launched
-16:15:22,661 DEBUG devpinoyLogger<strong>{1}</strong>:79 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-16:15:25,535 DEBUG devpinoyLogger<strong>{1}</strong>:74 - Chrome launched
-16:15:28,534 DEBUG devpinoyLogger<strong>{1}</strong>:79 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-16:15:28,554 DEBUG devpinoyLogger<strong>{1}</strong>:19 - Inside Login Test
-16:15:29,259 DEBUG devpinoyLogger<strong>{1}</strong>:23 - Login successfully executed
-16:15:29,510 DEBUG devpinoyLogger<strong>{1}</strong>:103 - Test excecute completed
-16:15:32,641 DEBUG devpinoyLogger<strong>{1}</strong>:74 - Chrome launched
-16:15:35,406 DEBUG devpinoyLogger<strong>{1}</strong>:79 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-16:15:41,606 DEBUG devpinoyLogger<strong>{1}</strong>:103 - Test excecute completed
-16:15:41,752 DEBUG devpinoyLogger<strong>{1}</strong>:103 - Test excecute completed
+20:25:19,925 DEBUG devpinoyLogger<strong>{1}</strong>:119 - config file loaded
+20:25:19,933 DEBUG devpinoyLogger<strong>{1}</strong>:124 - OR file loaded
+20:25:24,522 DEBUG devpinoyLogger<strong>{1}</strong>:136 - Chrome launched
+20:25:28,906 DEBUG devpinoyLogger<strong>{1}</strong>:141 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+20:25:31,315 DEBUG devpinoyLogger<strong>{1}</strong>:136 - Chrome launched
+20:25:34,763 DEBUG devpinoyLogger<strong>{1}</strong>:141 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+20:25:35,258 DEBUG devpinoyLogger<strong>{1}</strong>:24 - Inside Login Test
+20:25:35,706 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+20:25:35,707 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+20:25:35,708 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+20:25:35,710 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+20:25:35,710 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+20:25:36,404 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Test excecute completed
+20:25:38,709 DEBUG devpinoyLogger<strong>{1}</strong>:136 - Chrome launched
+20:25:41,418 DEBUG devpinoyLogger<strong>{1}</strong>:141 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+20:25:47,978 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+20:25:47,979 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+20:25:47,980 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+20:25:47,981 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+20:25:47,981 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+20:25:48,343 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Test excecute completed
+20:25:48,361 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Test excecute completed
