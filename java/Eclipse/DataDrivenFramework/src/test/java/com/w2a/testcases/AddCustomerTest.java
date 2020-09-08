@@ -18,7 +18,7 @@ import com.w2a.utilities.TestUtil;
 public class AddCustomerTest extends TestBase {
 
 	@Test (dataProviderClass = TestUtil.class ,dataProvider = "dp")
-	public void addCustomer(String firstName, String lastName, String postalCode, String alertText) throws InterruptedException {		click("bmlBtn_CSS");
+	public void addCustomerTest (String firstName, String lastName, String postalCode, String alertText) throws InterruptedException {		click("bmlBtn_CSS");
 		click("addCustBtn_CSS");
 		type("firstname_CSS", firstName);
 		type("lastname_XPATH", lastName);

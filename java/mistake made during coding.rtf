@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Italic;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red204\green108\blue29;\red249\green250\blue244;\red243\green236\blue121;
+\red230\green230\blue250;\red167\green236\blue33;\red121\green171\blue255;\red217\green232\blue247;\red18\green144\blue195;
+\red242\green242\blue0;\red23\green198\blue163;}
+{\*\expandedcolortbl;;\csgenericrgb\c80000\c42353\c11373;\csgenericrgb\c97647\c98039\c95686;\csgenericrgb\c95294\c92549\c47451;
+\csgenericrgb\c90196\c90196\c98039;\csgenericrgb\c65490\c92549\c12941;\csgenericrgb\c47451\c67059\c100000;\csgenericrgb\c85098\c90980\c96863;\csgenericrgb\c7059\c56471\c76471;
+\csgenericrgb\c94902\c94902\c0;\csgenericrgb\c9020\c77647\c63922;}
+\margl1440\margr1440\vieww15760\viewh11980\viewkind0
+\deftab720
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\fs24 \cf0 Mistakes made during coding\
+\
+Forgot to add wait, null pointer exception\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f1\i\fs32 \cf0 //wait
+\f2\i0  = new WebDriverWait(
+\f1\i driver
+\f2\i0 , 5);\
+Alert alert =	
+\f1\i wait
+\f2\i0 .until(ExpectedConditions.
+\f1\i alertIsPresent
+\f2\i0 ());\
+\
+\
+Type wrong name: test case skip the test case, return false all the time\
+\
+	String testCase = excel.getCellData(sheetName, "TCID", rNum);\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf2 if\cf3 (\cf4 testCase\cf5 .\cf6 equalsIgnoreCase\cf3 (\cf7 testName\cf3 ))\{\cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf8 			\cf0 \
+\cf8 			\cf9 String\cf8  \cf10 runmode\cf8  \cf5 =\cf8  \cf7 excel\cf5 .\cf6 getCellData\cf3 (\cf4 sheetName\cf5 ,\cf8  \cf11 "Runmode"\cf5 ,\cf8  \cf4 rNum\cf3 )\cf5 ;\cf0 \
+\cf8 			\cf0 \
+\cf8 			\cf2 if\cf3 (\cf4 runmode\cf5 .\cf6 equalsIgnoreCase\cf3 (\cf11 "Y"\cf3 ))\cf0 \
+\cf8 				\cf2 return\cf8  \cf2 true\cf5 ;\cf0 \
+\cf8 			\cf2 else\cf0 \
+\cf8 				\cf2 return\cf8  \cf2 false\cf5 ;\cf0 \
+\cf8 		\cf3 \}\cf0 \
+\cf8 		\cf0 \
+\cf8 		\cf0 \
+\cf8 	\cf3 \}\cf0 \
+\cf8 	\cf2 return\cf8  \cf2 false\cf5 ;
+\f0\fs24 \cf0 \
+}
