@@ -6,7 +6,7 @@
       <class name="com.w2a.testcases.AddCustomerTest">
         <methods>
           <include name="setUp"/>
-          <include name="addCustomer"/>
+          <include name="addCustomerTest" invocation-numbers="0 1 2 3"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.w2a.testcases.AddCustomerTest -->

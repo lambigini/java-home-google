@@ -26,7 +26,7 @@ public class CustomListeners extends TestBase implements ITestListener {
 		
 		TestBase.test.log(LogStatus.PASS, result.getName().toUpperCase(), "Pass");
 		rep.endTest(test);
-		rep.flush();
+		rep.flush();            
 	}
 
 	public void onTestFailure(ITestResult result) {
