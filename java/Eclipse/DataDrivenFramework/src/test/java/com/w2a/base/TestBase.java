@@ -62,6 +62,7 @@ public class TestBase {
 	public static WebDriverWait wait ;
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
+	public static String browser;
 	
 	public void click(String locator) {
 		if (locator.endsWith("_CSS")) {
@@ -147,6 +148,17 @@ public void select(String locator, String value) {
 			OR.load(fis);
 			log.debug("OR file loaded");
 		}
+		
+		if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+			
+			browser = System.getenv("browser");
+			
+		} else {
+			
+			browser = config.getProperty("browser");
+		}
+		
+		config.setProperty("browser", browser);
 
 		if (config.getProperty("browser").equals("firefox")) {
 

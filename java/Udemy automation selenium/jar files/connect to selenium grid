@@ -51,3 +51,7 @@ java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hub.json
 java -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodriver -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig node1.json
 
 java  -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodriver -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig node2.json
+------------------------------------------------------------------------------------------jenkin
+
+
+java -jar jenkins.war

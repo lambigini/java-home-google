@@ -1,50 +1,43 @@
-21:20:54,853 DEBUG devpinoyLogger<strong>{1}</strong>:143 - config file loaded
-21:20:54,858 DEBUG devpinoyLogger<strong>{1}</strong>:148 - OR file loaded
-21:20:58,859 DEBUG devpinoyLogger<strong>{1}</strong>:160 - Chrome launched
-21:21:03,392 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-21:21:06,116 DEBUG devpinoyLogger<strong>{1}</strong>:160 - Chrome launched
-21:21:08,707 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-21:21:09,112 DEBUG devpinoyLogger<strong>{1}</strong>:24 - Inside Login Test
-21:21:10,390 DEBUG devpinoyLogger<strong>{1}</strong>:28 - Login successfully executed
-21:21:10,427 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-21:21:10,429 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-21:21:10,431 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-21:21:10,437 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-21:21:10,437 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-21:21:11,168 DEBUG devpinoyLogger<strong>{1}</strong>:189 - Test excecute completed
-21:21:13,874 DEBUG devpinoyLogger<strong>{1}</strong>:160 - Chrome launched
-21:21:16,298 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-21:21:24,533 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-21:21:24,534 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-21:21:24,534 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-21:21:24,535 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-21:21:24,535 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-21:21:24,889 DEBUG devpinoyLogger<strong>{1}</strong>:189 - Test excecute completed
-21:21:27,228 DEBUG devpinoyLogger<strong>{1}</strong>:160 - Chrome launched
-21:21:29,456 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-21:21:29,464 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-21:21:29,465 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-21:21:29,465 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-21:21:29,466 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-21:21:29,466 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-21:21:29,777 DEBUG devpinoyLogger<strong>{1}</strong>:189 - Test excecute completed
-21:21:31,799 DEBUG devpinoyLogger<strong>{1}</strong>:160 - Chrome launched
-21:21:34,710 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-21:21:42,232 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-21:21:42,233 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-21:21:42,233 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-21:21:42,233 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-21:21:42,234 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-21:21:42,501 DEBUG devpinoyLogger<strong>{1}</strong>:189 - Test excecute completed
-21:21:44,595 DEBUG devpinoyLogger<strong>{1}</strong>:160 - Chrome launched
-21:21:46,986 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-21:21:51,360 DEBUG devpinoyLogger<strong>{1}</strong>:189 - Test excecute completed
-21:21:53,801 DEBUG devpinoyLogger<strong>{1}</strong>:160 - Chrome launched
-21:21:56,028 DEBUG devpinoyLogger<strong>{1}</strong>:165 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-21:22:01,957 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-21:22:01,958 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-21:22:01,959 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-21:22:01,959 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-21:22:01,959 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-21:22:02,548 DEBUG devpinoyLogger<strong>{1}</strong>:189 - Test excecute completed
-21:22:02,817 DEBUG devpinoyLogger<strong>{1}</strong>:189 - Test excecute completed
+21:54:07,411 DEBUG devpinoyLogger<strong>{1}</strong>:144 - config file loaded
+21:54:07,417 DEBUG devpinoyLogger<strong>{1}</strong>:149 - OR file loaded
+21:54:20,902 DEBUG devpinoyLogger<strong>{1}</strong>:177 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:54:34,536 DEBUG devpinoyLogger<strong>{1}</strong>:177 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:54:34,997 DEBUG devpinoyLogger<strong>{1}</strong>:24 - Inside Login Test
+21:54:36,934 DEBUG devpinoyLogger<strong>{1}</strong>:28 - Login successfully executed
+21:54:36,997 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+21:54:37,006 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+21:54:37,008 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+21:54:37,010 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+21:54:37,010 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:54:39,747 DEBUG devpinoyLogger<strong>{1}</strong>:201 - Test excecute completed
+21:54:48,290 DEBUG devpinoyLogger<strong>{1}</strong>:177 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:54:56,340 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+21:54:56,341 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+21:54:56,341 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+21:54:56,342 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+21:54:56,342 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:54:57,897 DEBUG devpinoyLogger<strong>{1}</strong>:201 - Test excecute completed
+21:55:05,052 DEBUG devpinoyLogger<strong>{1}</strong>:177 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:55:05,065 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+21:55:05,066 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+21:55:05,066 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+21:55:05,067 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+21:55:05,067 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:55:06,776 DEBUG devpinoyLogger<strong>{1}</strong>:201 - Test excecute completed
+21:55:15,465 DEBUG devpinoyLogger<strong>{1}</strong>:177 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:55:24,419 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+21:55:24,420 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+21:55:24,420 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+21:55:24,420 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+21:55:24,420 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:55:25,601 DEBUG devpinoyLogger<strong>{1}</strong>:201 - Test excecute completed
+21:55:32,984 DEBUG devpinoyLogger<strong>{1}</strong>:177 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:55:38,040 DEBUG devpinoyLogger<strong>{1}</strong>:201 - Test excecute completed
+21:56:01,262 DEBUG devpinoyLogger<strong>{1}</strong>:177 - Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
+21:56:07,416 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+21:56:07,417 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+21:56:07,417 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+21:56:07,417 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+21:56:07,417 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:56:08,612 DEBUG devpinoyLogger<strong>{1}</strong>:201 - Test excecute completed
+21:56:08,645 DEBUG devpinoyLogger<strong>{1}</strong>:201 - Test excecute completed
