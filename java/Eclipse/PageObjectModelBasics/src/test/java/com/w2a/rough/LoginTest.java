@@ -21,6 +21,9 @@ public static void main(String[] args) throws InterruptedException {
 	ZohoAppPage zp = new ZohoAppPage();
 	zp.gotoCRM();
 	
+	
+	Page.menu.gotoAccounts();
+	
 	Thread.sleep(4000);
 	driver.quit();
 }

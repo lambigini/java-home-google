@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Page_Object_Model">
+              <span class="suite-name border-failed">Page Object Model</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Page_Object_Model">
+                    <span>F:\seleniumworkspaces\LiveProjects\PageObjectModelBasics\src\test\resources\com\w2a\runner\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Page_Object_Model">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Page_Object_Model">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Page_Object_Model">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Page_Object_Model">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Page_Object_Model">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Page_Object_Model">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Page_Object_Model" class="hide-methods failed suite-Page_Object_Model"> (hide)</a> <!-- hide-methods failed suite-Page_Object_Model -->
+                      <a href="#" panel-name="suite-Page_Object_Model" class="show-methods failed suite-Page_Object_Model"> (show)</a> <!-- show-methods failed suite-Page_Object_Model -->
+                    </span>
+                    <div class="method-list-content failed suite-Page_Object_Model">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Page_Object_Model" title="com.w2a.testcases.CreateAccountTest" hash-for-method="createAccountTest({accountname=Raman})">createAccountTest({accountname=Raman})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Page_Object_Model" title="com.w2a.testcases.LoginTest" hash-for-method="loginTest({password=Selenium@123, runmode=Y, username=trainer@way2automation.com})">loginTest({password=Selenium@123, runmode=Y, username=trainer@way2automation.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Page_Object_Model -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Page_Object_Model" class="panel Page_Object_Model">
+          <div class="suite-Page_Object_Model-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.w2a.testcases.CreateAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountTest({accountname=Raman})">
+                  </a> <!-- createAccountTest({accountname=Raman}) -->
+                  <span class="method-name">createAccountTest</span>
+                  <span class="parameters">({accountname=Raman})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Create account test failed
+	at com.w2a.testcases.CreateAccountTest.createAccountTest(CreateAccountTest.java:25)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Page_Object_Model-class-failed -->
+          <div class="suite-Page_Object_Model-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.w2a.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest({password=Selenium@123, runmode=Y, username=trainer@way2automation.com})">
+                  </a> <!-- loginTest({password=Selenium@123, runmode=Y, username=trainer@way2automation.com}) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">({password=Selenium@123, runmode=Y, username=trainer@way2automation.com})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login test failed
+	at com.w2a.testcases.LoginTest.loginTest(LoginTest.java:20)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Page_Object_Model-class-failed -->
+        </div> <!-- panel Page_Object_Model -->
+        <div panel-name="test-xml-Page_Object_Model" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\seleniumworkspaces\LiveProjects\PageObjectModelBasics\src\test\resources\com\w2a\runner\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Page Object Model&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.w2a.listeners.CustomListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Login Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.w2a.testcases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test name=&quot;Create Account Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.w2a.testcases.CreateAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Create Account Test --&gt;
+&lt;/suite&gt; &lt;!-- Page Object Model --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Page_Object_Model" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Page Object Model</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Create Account Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Page_Object_Model" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Page Object Model</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Page_Object_Model" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Page Object Model</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Page_Object_Model');
+function tableData_Page_Object_Model() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'createAccountTest')
+data.setCell(0, 2, 'com.w2a.testcases.CreateAccountTest')
+data.setCell(0, 3, 38870);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.w2a.testcases.LoginTest')
+data.setCell(1, 3, 8950);
+window.suiteTableData['Page_Object_Model']= { tableData: data, tableDiv: 'times-div-Page_Object_Model'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <div id="times-div-Page_Object_Model">
+              </div> <!-- times-div-Page_Object_Model -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Page_Object_Model" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Page Object Model</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">loginTest({password=Selenium@123, runmode=Y, username=trainer@way2automation.com})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Click to see Screenshot</span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Nov_10_01_28_34_IST_2017.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Nov_10_01_28_34_IST_2017.jpg><img src=Fri_Nov_10_01_28_34_IST_2017.jpg height=200 width=200></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createAccountTest({accountname=Raman})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Click to see Screenshot</span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Nov_10_01_29_14_IST_2017.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target="_blank" href=Fri_Nov_10_01_29_14_IST_2017.jpg><img src=Fri_Nov_10_01_29_14_IST_2017.jpg height=200 width=200></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Page_Object_Model" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Page_Object_Model" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginTest({password=Selenium@123, runmode=Y, username=trainer@way2automation.com})</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.CreateAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createAccountTest({accountname=Raman})</span>
+                <span class="method-start">10047 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49470 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
