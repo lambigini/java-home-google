@@ -19,9 +19,11 @@ public class HomePage extends Page {
 
 	}
 
-	public void goToLogin() {
+	public LoginPage goToLogin() {
 
 		driver.findElement(By.cssSelector(".zh-login")).click();
+		
+		return new LoginPage();
 
 	}
 

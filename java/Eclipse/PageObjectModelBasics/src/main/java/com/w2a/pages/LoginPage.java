@@ -8,7 +8,7 @@ import com.w2a.base.Page;
 public class LoginPage extends Page {
 
 	
-	public void doLogin(String username, String password) {
+	public ZohoAppPage doLogin(String username, String password) {
 		driver.findElement(By.cssSelector("#login_id")).sendKeys(username);
 		driver.findElement(By.cssSelector("#nextbtn")).click();
 		
@@ -16,7 +16,7 @@ public class LoginPage extends Page {
 		driver.findElement(By.cssSelector("#password")).sendKeys(password);
 		driver.findElement(By.cssSelector("#nextbtn")).click();
 		
-			
+		return new ZohoAppPage();	
 	}
 	
 	public void gotoSaleandMarketing() {
