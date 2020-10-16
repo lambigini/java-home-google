@@ -1,0 +1,69 @@
+2020-08-19 14:10:44 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2020-08-19 14:10:44 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.39 ----------
+
+2020-08-19 14:10:44 INFO  PluginTasksProjectComponent.setAutoscrolls(366) - Autoscrolls successfully set
+2020-08-19 14:10:44 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(583) - The session is not set in the property file.
+2020-08-19 14:10:44 INFO  ApacheHttpClient.logout(627) - Waiting for server response.
+2020-08-19 14:10:44 INFO  ApacheHttpClient.logout(627) - Waiting for server response.
+2020-08-19 14:10:44 INFO  ApacheHttpClient.login(249) - Waiting for server response.
+2020-08-19 14:10:44 INFO  ApacheHttpClient.login(249) - Waiting for server response.
+2020-08-19 14:10:44 INFO  ApacheHttpClient.login(253) - responseCode = 200
+2020-08-19 14:10:44 INFO  ApacheHttpClient.login(276) - JSESSIONID OK
+2020-08-19 14:10:44 INFO  ApacheHttpClient.refreshUserInfo(304) - responseCode = 200
+2020-08-19 14:10:44 INFO  ApacheHttpClient.refreshUserInfo(310) - User information received.
+2020-08-19 14:10:44 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-08-19 14:10:44 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-08-19 14:10:51 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:10:55 WARN  PluginUtil.chooseTasksFolder(447) - No folder selected for the project!
+2020-08-19 14:11:13 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:11:47 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:11:48 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2020-08-19 14:11:48 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.39 ----------
+
+2020-08-19 14:11:48 INFO  PluginTasksProjectComponent.setAutoscrolls(366) - Autoscrolls successfully set
+2020-08-19 14:11:48 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(596) - Waiting for server response.
+2020-08-19 14:11:48 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(596) - Waiting for server response.
+2020-08-19 14:11:48 INFO  ApacheHttpClient.refreshUserInfo(304) - responseCode = 200
+2020-08-19 14:11:48 INFO  ApacheHttpClient.refreshUserInfo(310) - User information received.
+2020-08-19 14:11:48 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-08-19 14:11:48 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-08-19 14:12:05 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:12:27 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:12:28 INFO  ApacheHttpClient.getFilteredTasks(335) - responseCode = 200
+2020-08-19 14:12:45 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:12:46 INFO  ApacheHttpClient.getFilteredTasks(335) - responseCode = 200
+2020-08-19 14:12:52 INFO  ApacheHttpClient.getFilteredTasks(335) - responseCode = 200
+2020-08-19 14:13:00 INFO  ApacheHttpClient.getFilteredTasks(335) - responseCode = 200
+2020-08-19 14:13:19 INFO  ApacheHttpClient.getTaskTemplateInfo(352) - responseCode = 200
+2020-08-19 14:13:36 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2020-08-19 14:13:45 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2020-08-19 14:14:20 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:14:28 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:14:44 WARN  PluginUtil.isProjectStructureCorrect(345) - The project structure is invalid.
+2020-08-19 14:14:48 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
+2020-08-19 14:15:07 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:15:15 WARN  PluginUtil.chooseTasksFolder(447) - No folder selected for the project!
+2020-08-19 14:15:18 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:15:39 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:16:29 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:16:30 INFO  PluginTasksProjectComponent.projectOpened(77) - ---------- Project opened ----------
+2020-08-19 14:16:30 INFO  PluginTasksProjectComponent.projectOpened(78) - ---------- Version 3.39 ----------
+
+2020-08-19 14:16:30 INFO  PluginTasksProjectComponent.setAutoscrolls(366) - Autoscrolls successfully set
+2020-08-19 14:16:30 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(583) - The session is not set in the property file.
+2020-08-19 14:16:30 INFO  ApacheHttpClient.logout(627) - Waiting for server response.
+2020-08-19 14:16:30 INFO  ApacheHttpClient.login(249) - Waiting for server response.
+2020-08-19 14:16:30 INFO  ApacheHttpClient.login(253) - responseCode = 200
+2020-08-19 14:16:30 INFO  ApacheHttpClient.login(276) - JSESSIONID OK
+2020-08-19 14:16:30 INFO  ApacheHttpClient.refreshUserInfo(304) - responseCode = 200
+2020-08-19 14:16:30 INFO  ApacheHttpClient.refreshUserInfo(310) - User information received.
+2020-08-19 14:16:30 INFO  ApacheHttpClient.startGA(35) - GAService started.
+2020-08-19 14:16:30 INFO  AbstractRestApiClient.startService(71) - EventsService started.
+2020-08-19 14:16:41 INFO  ApacheHttpClient.getWebResourceAsStream(496) - responseCode = 200
+2020-08-19 14:16:42 INFO  ApacheHttpClient.getFilteredTasks(335) - responseCode = 200
+2020-08-19 14:16:48 INFO  ApacheHttpClient.getFilteredTasks(335) - responseCode = 200
+2020-08-19 14:16:50 INFO  PluginTasksProjectComponent.projectClosing(188) - ---------- Project closed ----------
+
