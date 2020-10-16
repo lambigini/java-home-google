@@ -21,7 +21,7 @@ public class HomePage extends Page {
 
 	public LoginPage goToLogin() {
 
-		driver.findElement(By.cssSelector(".zh-login")).click();
+		click("loginlink_CSS");
 		
 		return new LoginPage();
 

@@ -129,6 +129,12 @@ public class Page {
 	
 	
 }
+	
+	public static void quit() {
+		driver.quit();
+	}
+	
+	
 	// common keyword
 	public void click(String locator) {
 		if (locator.endsWith("_CSS")) {

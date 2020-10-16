@@ -9,12 +9,12 @@ public class LoginPage extends Page {
 
 	
 	public ZohoAppPage doLogin(String username, String password) {
-		driver.findElement(By.cssSelector("#login_id")).sendKeys(username);
-		driver.findElement(By.cssSelector("#nextbtn")).click();
+		type("email_CSS", username);
+		click("signbtn_CSS");
 		
 		
-		driver.findElement(By.cssSelector("#password")).sendKeys(password);
-		driver.findElement(By.cssSelector("#nextbtn")).click();
+		type("password_CSS", password);
+		click("signbtn_CSS");
 		
 		return new ZohoAppPage();	
 	}
