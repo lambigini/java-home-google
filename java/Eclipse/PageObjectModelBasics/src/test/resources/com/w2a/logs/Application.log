@@ -1,2 +1,8 @@
-20/10/2020 22:34:24 devpinoyLogger config file loaded
-20/10/2020 22:34:24 devpinoyLogger OR file loaded
+22/10/2020 22:49:47 devpinoyLogger config file loaded
+22/10/2020 22:49:47 devpinoyLogger OR file loaded
+22/10/2020 22:49:56 devpinoyLogger Navigated to: http://www.zoho.com
+22/10/2020 22:50:01 devpinoyLogger Clicking on an Element loginlink_CSS
+22/10/2020 22:50:01 devpinoyLogger Typing in an Element email_CSSentered value as: support@wonpros.com
+22/10/2020 22:50:01 devpinoyLogger Clicking on an Element signbtn_CSS
+22/10/2020 22:50:02 devpinoyLogger Typing in an Element password_CSSentered value as: 100Millionby2030
+22/10/2020 22:50:02 devpinoyLogger Clicking on an Element signbtn_CSS

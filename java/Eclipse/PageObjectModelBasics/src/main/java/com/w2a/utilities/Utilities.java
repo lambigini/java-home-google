@@ -38,7 +38,7 @@ public class Utilities extends Page {
 		String sheetName = m.getName();
 		int rows = excel.getRowCount(sheetName);
 		int cols = excel.getColumnCount(sheetName);
-
+System.out.println(rows);
 		Object[][] data = new Object[rows - 1][1];
 		
 		Hashtable<String,String> table = null;

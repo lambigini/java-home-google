@@ -6,14 +6,13 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.w2a.listeners.CustomListeners"/>
   </listeners>
-  <test name=" Login Test(failed)">
+  <test name=" Create Account Test(failed)">
     <classes>
-      <class name="com.w2a.testcases.LoginTest">
+      <class name="com.w2a.testcases.CreateAccountTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginTest"/>
+          <include name="createAccountTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.w2a.testcases.LoginTest -->
+      </class> <!-- com.w2a.testcases.CreateAccountTest -->
     </classes>
-  </test> <!--  Login Test(failed) -->
+  </test> <!--  Create Account Test(failed) -->
 </suite> <!-- Failed suite [Page Object Model] -->

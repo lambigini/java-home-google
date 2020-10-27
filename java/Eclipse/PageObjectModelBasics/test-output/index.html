@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Page_Object_Model">
-              <span class="suite-name border-passed">Page Object Model</span>
+              <span class="suite-name border-failed">Page Object Model</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Page_Object_Model">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Page_Object_Model" class="hide-methods failed suite-Page_Object_Model"> (hide)</a> <!-- hide-methods failed suite-Page_Object_Model -->
+                      <a href="#" panel-name="suite-Page_Object_Model" class="show-methods failed suite-Page_Object_Model"> (show)</a> <!-- show-methods failed suite-Page_Object_Model -->
+                    </span>
+                    <div class="method-list-content failed suite-Page_Object_Model">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Page_Object_Model" title="com.w2a.testcases.CreateAccountTest" hash-for-method="createAccountTest({accountname=harrison})">createAccountTest({accountname=harrison})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Page_Object_Model -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-Page_Object_Model">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Page_Object_Model" title="com.w2a.testcases.LoginTest" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Page_Object_Model" title="com.w2a.testcases.LoginTest" hash-for-method="loginTest({password=100Millionby2030, runmode=Y, =, username=support@wonpros.com})">loginTest({password=100Millionby2030, runmode=Y, =, username=support@wonpros.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Page_Object_Model -->
@@ -117,6 +131,41 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Page_Object_Model" class="panel Page_Object_Model">
+          <div class="suite-Page_Object_Model-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.w2a.testcases.CreateAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountTest({accountname=harrison})">
+                  </a> <!-- createAccountTest({accountname=harrison}) -->
+                  <span class="method-name">createAccountTest</span>
+                  <span class="parameters">({accountname=harrison})</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/crm/org726028336/tab/...&quot;&gt;Accounts&lt;/a&gt; is not clickable at point (360, 26). Other element would receive the click: &lt;div id=&quot;freezeBackGround&quot; onclick=&quot;javascript:sE(event);&quot; style=&quot;display: block; z-index: 30; position: fixed; top: 0px; left: 0px;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=86.0.4240.111)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Harrisons-iMac.local&apos;, ip: &apos;192.168.1.17&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/8y/8dvpvshj4kb...}, goog:chromeOptions: {debuggerAddress: localhost:51225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ba2aaba597bd7f74cc2ec67c79a7d18d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.w2a.base.TopMenu.gotoAccounts(TopMenu.java:31)
+	at com.w2a.testcases.CreateAccountTest.createAccountTest(CreateAccountTest.java:24)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Page_Object_Model-class-failed -->
           <div class="suite-Page_Object_Model-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -125,9 +174,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
+                  <a name="loginTest({password=100Millionby2030, runmode=Y, =, username=support@wonpros.com})">
+                  </a> <!-- loginTest({password=100Millionby2030, runmode=Y, =, username=support@wonpros.com}) -->
                   <span class="method-name">loginTest</span>
+                  <span class="parameters">({password=100Millionby2030, runmode=Y, =, username=support@wonpros.com})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -152,6 +202,11 @@
       &lt;class name=&quot;com.w2a.testcases.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!--  Login Test --&gt;
+  &lt;test name=&quot; Create Account Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.w2a.testcases.CreateAccountTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!--  Create Account Test --&gt;
 &lt;/suite&gt; &lt;!-- Page Object Model --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -164,6 +219,9 @@
             <ul>
               <li>
                 <span class="test-name"> Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name"> Create Account Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,16 +247,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.w2a.testcases.LoginTest')
-data.setCell(0, 3, 4353);
+data.setCell(0, 1, 'createAccountTest')
+data.setCell(0, 2, 'com.w2a.testcases.CreateAccountTest')
+data.setCell(0, 3, 14801);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.w2a.testcases.LoginTest')
+data.setCell(1, 3, 2922);
 window.suiteTableData['Page_Object_Model']= { tableData: data, tableDiv: 'times-div-Page_Object_Model'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Page_Object_Model">
               </div> <!-- times-div-Page_Object_Model -->
             </div> <!-- times-div -->
@@ -209,6 +271,15 @@ return data;
             <span class="header-content">Reporter output for Page Object Model</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createAccountTest({accountname=harrison})</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Login successfully executed</span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Oct_22_22_50_20_PDT_2020.jpg>Screenshot</a></span>
+                <span class="reporter-method-output"><br></span>
+                <span class="reporter-method-output"><a target="_blank" href=Thu_Oct_22_22_50_20_PDT_2020.jpg><img src=Thu_Oct_22_22_50_20_PDT_2020.jpg></img></a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Page_Object_Model" class="panel">
@@ -226,12 +297,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.w2a.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
+                <span class="method-name">loginTest({password=100Millionby2030, runmode=Y, =, username=support@wonpros.com})</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.CreateAccountTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createAccountTest({accountname=harrison})</span>
+                <span class="method-start">6184 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.w2a.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5070 ms</span>
+                <span class="method-start">21881 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
