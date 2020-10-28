@@ -970,6 +970,8 @@ BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
             line = readLine.readLine();
         }
 
-
+--------------------------------------------------------------------------
+get class name
+this.getClass().getSimpleName();
 
 

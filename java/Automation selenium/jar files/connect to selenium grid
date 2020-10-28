@@ -21,7 +21,7 @@ Just to be safe. Again depending on how you opened the port, this may not matter
 
 
 
-cd Google\ Drive/Coding/Github/java-home-google/java/Udemy\ automation\ selenium/jar\ files/
+cd Google\ Drive/Coding/Github/java-home-google/java/Automation\ selenium/jar\ files/
 
 
 
@@ -55,3 +55,4 @@ java  -Dwebdriver.chrome.driver=chromedriver -Dwebdriver.gecko.driver=geckodrive
 
 
 java -jar jenkins.war
+http://localhost:8080/login?from=%2F

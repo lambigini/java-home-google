@@ -133,6 +133,18 @@ public void select(String locator, String value) {
 	select.selectByVisibleText(value);
 	test.log(LogStatus.INFO, "select from dropdown" + locator + " value as " + value);
 }
+
+public static Boolean isElementPresent(By by) {
+	
+	
+	try {
+		driver.findElement(by);
+		return true;
+	} catch (NoSuchElementException e) {
+		return false;
+	}
+}
+
 	
 	@BeforeMethod
 	@BeforeSuite
@@ -176,19 +188,10 @@ public void select(String locator, String value) {
 		driver.get(config.getProperty("testsiteurl"));
 		log.debug("Navigated to: " + config.getProperty("testsiteurl"));
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
-
+		//wait = new WebDriverWait(driver, 5);
 	}
 	
-	public static Boolean isElementPresent(By by) {
-		
-		
-		try {
-			driver.findElement(by);
-			return true;
-		} catch (NoSuchElementException e) {
-			return false;
-		}
-	}
+
 
 	
 	@AfterMethod

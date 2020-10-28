@@ -1,25 +1,12 @@
-15/09/2020 17:02:34 devpinoyLogger config file loaded
-15/09/2020 17:02:34 devpinoyLogger OR file loaded
-15/09/2020 17:02:46 devpinoyLogger Chrome launched
-15/09/2020 17:02:50 devpinoyLogger Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-15/09/2020 17:02:56 devpinoyLogger Chrome launched
-15/09/2020 17:03:00 devpinoyLogger Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-15/09/2020 17:03:01 devpinoyLogger Inside Login Test
-15/09/2020 17:03:02 devpinoyLogger Login successfully executed
-15/09/2020 17:03:03 devpinoyLogger Test excecute completed
-15/09/2020 17:03:10 devpinoyLogger Chrome launched
-15/09/2020 17:03:12 devpinoyLogger Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-15/09/2020 17:03:21 devpinoyLogger Test excecute completed
-15/09/2020 17:03:23 devpinoyLogger Chrome launched
-15/09/2020 17:03:27 devpinoyLogger Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-15/09/2020 17:03:27 devpinoyLogger Test excecute completed
-15/09/2020 17:03:29 devpinoyLogger Chrome launched
-15/09/2020 17:03:34 devpinoyLogger Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-15/09/2020 17:03:42 devpinoyLogger Test excecute completed
-15/09/2020 17:03:44 devpinoyLogger Chrome launched
-15/09/2020 17:03:47 devpinoyLogger Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-15/09/2020 17:03:52 devpinoyLogger Test excecute completed
-15/09/2020 17:03:56 devpinoyLogger Chrome launched
-15/09/2020 17:04:00 devpinoyLogger Navigated to: http://www.way2automation.com/angularjs-protractor/banking/#/login
-15/09/2020 17:04:06 devpinoyLogger Test excecute completed
-15/09/2020 17:04:06 devpinoyLogger Test excecute completed
+26/10/2020 21:37:57 devpinoyLogger config file loaded
+26/10/2020 21:37:57 devpinoyLogger OR file loaded
+26/10/2020 21:38:09 devpinoyLogger Navigated to: http://www.zoho.com
+26/10/2020 21:38:16 devpinoyLogger Clicking on an Element loginlink_CSS
+26/10/2020 21:38:16 devpinoyLogger Typing in an Element email_CSSentered value as: support@wonpros.com
+26/10/2020 21:38:16 devpinoyLogger Clicking on an Element signbtn_CSS
+26/10/2020 21:38:17 devpinoyLogger Typing in an Element password_CSSentered value as: 100Millionby2030
+26/10/2020 21:38:17 devpinoyLogger Clicking on an Element signbtn_CSS
+26/10/2020 21:38:34 devpinoyLogger Clicking on an Element crmlink_CSS
+26/10/2020 21:38:34 devpinoyLogger Clicking on an Element accountstab_XPATH
+26/10/2020 21:38:36 devpinoyLogger Clicking on an Element createaccountbtn_CSS
+26/10/2020 21:38:38 devpinoyLogger Typing in an Element accountname_CSSentered value as: harrison

@@ -128,7 +128,7 @@
 				<configuration>
 					<testFailureIgnore> false </testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/runner/testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/com/w2a/runner/testng.xml</suiteXmlFile>
 
 					</suiteXmlFiles>
 				</configuration>
@@ -145,7 +145,7 @@
 
 		<testResources>
 			<testResource>
-				<directory>src/test/resources/properties</directory>
+				<directory>src/test/resources/com/w2a/properties</directory>
 				<includes>
 					<include>log4j.properties</include>
 				</includes>

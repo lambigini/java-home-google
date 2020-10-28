@@ -8,7 +8,7 @@ public class CreateAccountPage  extends Page{
 	
 	public void createAccount(String accountName) {
 		
-		driver.findElement(By.cssSelector("#Crm_Accounts_ACCOUNTNAME")).sendKeys(accountName);
+		type("accountname_CSS",accountName);
 	}
 
 }
