@@ -9,7 +9,7 @@ public class AccountsPage  extends Page{
 	public CreateAccountPage gotoCreateAccounts() {
 		
 		
-		driver.findElement(By.cssSelector(".customPlusBtn.cP")).click();
+		click("createaccountbtn_CSS");
 		
 		return new CreateAccountPage();
 		

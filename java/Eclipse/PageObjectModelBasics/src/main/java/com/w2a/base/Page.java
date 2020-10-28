@@ -136,7 +136,7 @@ public class Page {
 	
 	
 	// common keyword
-	public void click(String locator) {
+	public static void click(String locator) {
 		if (locator.endsWith("_CSS")) {
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
 			
@@ -151,7 +151,7 @@ public class Page {
 		test.log(LogStatus.INFO, "click on " + locator);
 	}
 	
-	public void type(String locator, String value) {
+	public static void type(String locator, String value) {
 		
 		if(locator.endsWith("_CSS")) {
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);

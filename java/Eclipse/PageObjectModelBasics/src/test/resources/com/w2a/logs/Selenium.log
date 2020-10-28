@@ -1,18 +1,22 @@
-22:49:47,977 DEBUG devpinoyLogger<strong>{1}</strong>:66 - config file loaded
-22:49:47,985 DEBUG devpinoyLogger<strong>{1}</strong>:81 - OR file loaded
-22:49:56,266 DEBUG devpinoyLogger<strong>{1}</strong>:121 - Navigated to: http://www.zoho.com
-22:50:01,470 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element loginlink_CSS
-22:50:01,797 DEBUG devpinoyLogger<strong>{1}</strong>:166 - Typing in an Element email_CSSentered value as: support@wonpros.com
-22:50:01,919 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element signbtn_CSS
-22:50:02,139 DEBUG devpinoyLogger<strong>{1}</strong>:166 - Typing in an Element password_CSSentered value as: 100Millionby2030
-22:50:02,269 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element signbtn_CSS
-22:50:02,331 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-22:50:02,333 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-22:50:02,336 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-22:50:02,337 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-22:50:02,338 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-22:50:20,987 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-22:50:20,988 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-22:50:20,988 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-22:50:21,035 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-22:50:21,037 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:37:57,849 DEBUG devpinoyLogger<strong>{1}</strong>:66 - config file loaded
+21:37:57,857 DEBUG devpinoyLogger<strong>{1}</strong>:81 - OR file loaded
+21:38:09,753 DEBUG devpinoyLogger<strong>{1}</strong>:121 - Navigated to: http://www.zoho.com
+21:38:16,287 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element loginlink_CSS
+21:38:16,709 DEBUG devpinoyLogger<strong>{1}</strong>:166 - Typing in an Element email_CSSentered value as: support@wonpros.com
+21:38:16,874 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element signbtn_CSS
+21:38:17,097 DEBUG devpinoyLogger<strong>{1}</strong>:166 - Typing in an Element password_CSSentered value as: 100Millionby2030
+21:38:17,234 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element signbtn_CSS
+21:38:21,108 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+21:38:21,110 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+21:38:21,116 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+21:38:21,117 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+21:38:21,119 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+21:38:34,424 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element crmlink_CSS
+21:38:34,922 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element accountstab_XPATH
+21:38:36,783 DEBUG devpinoyLogger<strong>{1}</strong>:150 - Clicking on an Element createaccountbtn_CSS
+21:38:38,090 DEBUG devpinoyLogger<strong>{1}</strong>:166 - Typing in an Element accountname_CSSentered value as: harrison
+21:38:38,780 DEBUG freemarker.cache<strong>{1}</strong>:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+21:38:38,781 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+21:38:38,781 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+21:38:38,782 DEBUG freemarker.cache<strong>{1}</strong>:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+21:38:38,783 DEBUG freemarker.cache<strong>{1}</strong>:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/Users/harrisontranimac/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

@@ -2,6 +2,7 @@ package com.w2a.base;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.ClickAction;
 
 import com.w2a.pages.crm.accounts.AccountsPage;
 
@@ -28,7 +29,7 @@ public class TopMenu {
 	}
 
 	public AccountsPage gotoAccounts() {
-		driver.findElement(By.xpath("//a[contains(.,'Accounts')]")).click();
+		Page.click("accountstab_XPATH");
 		//driver.findElement(By.cssSelector("#tab_Accounts")).click();
 
 		return new AccountsPage();

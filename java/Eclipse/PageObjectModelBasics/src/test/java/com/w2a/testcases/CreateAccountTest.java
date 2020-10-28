@@ -2,6 +2,7 @@ package com.w2a.testcases;
 
 import java.util.Hashtable;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.w2a.base.Page;
@@ -26,7 +27,8 @@ public class CreateAccountTest {
 
 		CreateAccountPage cap = account.gotoCreateAccounts();
 
-		cap.createAccount(data.get("accountName"));
+		cap.createAccount(data.get("accountname"));
+		Assert.fail("fail Create Account Test");
 
 	}
 }

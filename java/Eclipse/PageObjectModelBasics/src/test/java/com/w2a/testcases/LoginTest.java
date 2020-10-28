@@ -2,6 +2,7 @@ package com.w2a.testcases;
 
 import java.util.Hashtable;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.w2a.pages.HomePage;
@@ -17,6 +18,6 @@ public class LoginTest extends BaseTest {
 		HomePage home = new HomePage();
 		LoginPage lp = home.goToLogin();
 		 lp.doLogin(data.get("username"), data.get("password"));
-		
+		Assert.fail("fail loginTest");
 	}
 }

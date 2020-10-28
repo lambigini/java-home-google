@@ -1,8 +1,12 @@
-22/10/2020 22:49:47 devpinoyLogger config file loaded
-22/10/2020 22:49:47 devpinoyLogger OR file loaded
-22/10/2020 22:49:56 devpinoyLogger Navigated to: http://www.zoho.com
-22/10/2020 22:50:01 devpinoyLogger Clicking on an Element loginlink_CSS
-22/10/2020 22:50:01 devpinoyLogger Typing in an Element email_CSSentered value as: support@wonpros.com
-22/10/2020 22:50:01 devpinoyLogger Clicking on an Element signbtn_CSS
-22/10/2020 22:50:02 devpinoyLogger Typing in an Element password_CSSentered value as: 100Millionby2030
-22/10/2020 22:50:02 devpinoyLogger Clicking on an Element signbtn_CSS
+26/10/2020 21:37:57 devpinoyLogger config file loaded
+26/10/2020 21:37:57 devpinoyLogger OR file loaded
+26/10/2020 21:38:09 devpinoyLogger Navigated to: http://www.zoho.com
+26/10/2020 21:38:16 devpinoyLogger Clicking on an Element loginlink_CSS
+26/10/2020 21:38:16 devpinoyLogger Typing in an Element email_CSSentered value as: support@wonpros.com
+26/10/2020 21:38:16 devpinoyLogger Clicking on an Element signbtn_CSS
+26/10/2020 21:38:17 devpinoyLogger Typing in an Element password_CSSentered value as: 100Millionby2030
+26/10/2020 21:38:17 devpinoyLogger Clicking on an Element signbtn_CSS
+26/10/2020 21:38:34 devpinoyLogger Clicking on an Element crmlink_CSS
+26/10/2020 21:38:34 devpinoyLogger Clicking on an Element accountstab_XPATH
+26/10/2020 21:38:36 devpinoyLogger Clicking on an Element createaccountbtn_CSS
+26/10/2020 21:38:38 devpinoyLogger Typing in an Element accountname_CSSentered value as: harrison

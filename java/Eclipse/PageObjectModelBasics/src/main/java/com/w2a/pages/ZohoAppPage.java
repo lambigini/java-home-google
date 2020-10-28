@@ -17,7 +17,7 @@ public class ZohoAppPage extends Page {
 
 	public CRMHomePage gotoCRM() {
 
-		driver.findElement(By.cssSelector("._logo-crm._logo-x96.zod-app-logo")).click();
+		click("crmlink_CSS");
 		
 		return new CRMHomePage();
 
