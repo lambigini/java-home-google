@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "ee5b0079-6561-42ab-9052-767786a0c356",
+		"name": "Parameterization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DataParameterization",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3828cbd8-f4b6-4f0e-ae06-e91acc80bae2",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\":\"{{email_id}}\",\r\n  \"firstName\":\"{{first_name}}\",\r\n  \"lastName\":\"{{last_name}}\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURI}}/{{basePath}}/{{userEndPoint}}",
+					"host": [
+						"{{baseURI}}"
+					],
+					"path": [
+						"{{basePath}}",
+						"{{userEndPoint}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

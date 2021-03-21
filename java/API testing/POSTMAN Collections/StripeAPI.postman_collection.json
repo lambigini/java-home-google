@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "b2b08418-bb93-47a5-bd7d-872bba8c01f4",
+		"name": "StripeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateCustomer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "03323b6d-041a-4fd6-9f09-5a2bd1f4fc16",
+						"exec": [
+							"pm.test(\"Validate the customer name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.name).to.eql(\"Raman Arora\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "sk_test_8Ek0AIAk0fyvUyJiDbG5ZOIN",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.stripe.com/v1/customers?email=corporate@way2automation.com&name=Raman Arora&description=This is a new test customer",
+					"protocol": "https",
+					"host": [
+						"api",
+						"stripe",
+						"com"
+					],
+					"path": [
+						"v1",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "corporate@way2automation.com"
+						},
+						{
+							"key": "name",
+							"value": "Raman Arora"
+						},
+						{
+							"key": "description",
+							"value": "This is a new test customer"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List_All_Customers",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer sk_test_8Ek0AIAk0fyvUyJiDbG5ZOIN",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.stripe.com/v1/customers?limit=3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"stripe",
+						"com"
+					],
+					"path": [
+						"v1",
+						"customers"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

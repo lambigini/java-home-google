@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "f34ca6f6-334c-4fd5-b2e3-c00a79ed1377",
+		"name": "TestCases",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateUser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "89758011-7160-41fa-88cd-24b4b2c477a6",
+						"exec": [
+							"console.log(\"Hello world !!!\")",
+							"",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"token\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"var responseJson = JSON.parse(responseBody).token;",
+							"console.log(\"Token field value available in response is -> \"+responseJson)",
+							"",
+							"//console.log(pm.response.json().token);",
+							"",
+							"",
+							"pm.environment.set(\"token\", responseJson);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"eve.holt@reqres.in\",\r\n    \"password\": \"pistol\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURI}}/{{basePath}}/{{registerEndPoint}}",
+					"host": [
+						"{{baseURI}}"
+					],
+					"path": [
+						"{{basePath}}",
+						"{{registerEndPoint}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleUserData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "20890d7b-0be0-4ee6-8349-5654877dedf7",
+						"exec": [
+							"pm.test(\"validate the field id has value 2\",function(){",
+							"    ",
+							"    var responseJson = JSON.parse(responseBody);",
+							"    var idValue = responseJson.data.id;",
+							"    pm.expect(idValue).to.equal(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "token",
+						"value": "{{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseURI}}/{{basePath}}/{{userEndPoint}}/2",
+					"host": [
+						"{{baseURI}}"
+					],
+					"path": [
+						"{{basePath}}",
+						"{{userEndPoint}}",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
